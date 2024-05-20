@@ -185,31 +185,17 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Software Developer Intern",
+    desc: "Utilized MERN (MongoDB, ExpressJS, ReactJS, NodeJS) stack to develop and deployed 3 web applications for clients use, improving operational efficiency by 20%. Increased website traffic by 10% through SEO optimization techniques. Leveraged AWS S3 for cloud storage, ensuring 99.99% uptime for all executed applications. Delivered unit and integration testing frameworks, achieving 85% code coverage and minimizing bugs.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Software Analyst Intern",
+    desc: "Analyzed and documented business requirements for Project ICE, contributing to integration of specific SAP modules (Finance, HR, Material management) across 500+ locations. Designed test cases and conducted functional testing of SAP functionalities. Performed data migration and cleansing tasks for ERP integration.",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/exp2.svg",
   },
 ];
 
