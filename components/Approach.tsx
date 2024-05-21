@@ -14,7 +14,7 @@ const Approach = () => {
         <Card
           title="Planning & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
-          description="Figma"
+          description="Understand the project's goals, target audience, and functional requirements. Choose the appropriate tech stack, including programming languages, frameworks, and databases. Outline the system's architecture, including how different components will interact and scale."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -24,7 +24,7 @@ const Approach = () => {
         <Card
           title="Development"
           icon={<AceternityIcon order="Phase 2" />}
-          description="Figma"
+          description="Write the source code using chosen technologies, following coding standards and best practices. Conduct various levels of testing, including unit, integration, and system testing, to ensure functionality and performance. Use tools like Git to manage changes and collaborate effectively with other developers."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -37,9 +37,9 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Post-Deployment"
+          title="Deployment"
           icon={<AceternityIcon order="Phase 3" />}
-          description="Figma"
+          description="Configure the production environment, including servers, databases, and other infrastructure. Use CI/CD pipelines for automated testing and deployment to streamline the release process. Monitor the application for issues, perform regular updates, and apply patches as needed."
         >
           <CanvasRevealEffect
             animationSpeed={3}

@@ -10,15 +10,15 @@ const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-purple">Recent Projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+      <div className="flex flex-wrap items-start justify-center p-4 gap-x-24 gap-y-8 mt-10 ">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}
-            className="lg:min-h-[32.5rem] flex items-center justify-center w-[80vw] sm:h-[41rem] h-[32rem] sm:w-[570px]"
+            className="lg:min-h-[32.5rem] flex items-center justify-center w-[80vw] sm:h-[41rem] md:h-[40rem] sm:w-[570px] md:mb-15 lg:mb-20"
           >
             <PinContainer title={link} href={link}>
-              <div className="relative flex items-center justify-center sm:w-[570px] sm:h-[40vh] h-[30vh] w-[80vw] overflow-hidden mb-10">
-                <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
+              <div className="relative flex items-center justify-center sm:w-[570px] sm:h-[40vh] md:h-[25vh] h-[30vh] w-[80vw] overflow-hidden mb-10">
+                <div className="relative w-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
                   <img src="/bg.png" alt="bg-img" />
                 </div>
                 <img src={img} alt={title} className="z-10 absolute bottom-0" />
