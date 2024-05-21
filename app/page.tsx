@@ -8,7 +8,7 @@ import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 import Image from "next/image";
 import { FaHome } from "react-icons/fa";
-import { GoogleAnalytics } from "@next/third-parties/google";
+// import { GoogleAnalytics } from "@next/third-parties/google";
 
 export default function Home() {
   return (
