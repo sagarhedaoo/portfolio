@@ -14,6 +14,7 @@ Sentry.init({
   debug: false,
 
   replaysOnErrorSampleRate: 1.0,
+  profilesSampleRate: 1.0,
 
   // This sets the sample rate to be 10%. You may want this to be 100% while
   // in development and sample at a lower rate in production
@@ -21,6 +22,7 @@ Sentry.init({
 
   // You can remove this option if you're not planning to use the Sentry Session Replay feature:
   integrations: [
+    // Sentry.BrowserProfilingIntegration(),
     Sentry.replayIntegration({
       // Additional Replay configuration goes in here, for example:
       maskAllText: true,
