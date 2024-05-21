@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <GoogleAnalytics gaId="G-670NTESQHE" />
+        {/* <GoogleAnalytics gaId="G-670NTESQHE" /> */}
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

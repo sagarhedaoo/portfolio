@@ -13,7 +13,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 export default function Home() {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
-      <GoogleAnalytics gaId="G-670NTESQHE" />
+      {/* <GoogleAnalytics gaId="G-670NTESQHE" /> */}
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
         <Hero />
