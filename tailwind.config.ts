@@ -10,11 +10,13 @@ const {
 const config = {
   lightMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
+    "./pages/**/*.{js,jsx,ts,tsx}",
     "./components/**/*.{ts,tsx}",
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
     "./data/**/*.{ts,tsx}",
+    "./app/pages/**/*.{ts,tsx}",
+    "./app/components/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
