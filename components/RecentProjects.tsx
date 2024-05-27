@@ -10,11 +10,11 @@ const RecentProjects = () => {
         A small selection of{" "}
         <span className="text-orange-400">Recent Projects</span>
       </h1>
-      <div className="flex flex-wrap items-start justify-center p-4 gap-x-24 gap-y-8 mt-10">
+      <div className="flex flex-wrap items-start justify-center p-2 gap-x-24 gap-y-8 md:-mt-30 sm:mt-20">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
             key={id}
-            className="lg:min-h-[32.5rem] flex items-center justify-center w-[80vw] sm:h-[41rem] md:h-[40rem] sm:w-[570px] md:mb-15 lg:mb-20"
+            className="flex items-center justify-center w-[80vw] sm:h-[41rem] md:h-[30rem] sm:w-[570px] md:mb-15 lg:mb-20 sm:mb-20 mb-10! min-h-[30rem]"
           >
             <PinContainer title={link} href={link}>
               <div className="relative flex items-center justify-center sm:w-[570px] sm:h-[40vh] md:h-[25vh] h-[30vh] w-[80vw] overflow-hidden mb-10">
@@ -61,8 +61,8 @@ const RecentProjects = () => {
           </div>
         ))}
       </div>
-      <div className="-mt-20">
-        <h3 className="heading text-black-100 lg:text-xl md:text-sm sm:text-sm flex items-center justify-center">
+      <div className="mt-10 md:-mt-5 -mb-20">
+        <h3 className="font-bold text-black-100 lg:text-xl md:text-sm sm:text-xs flex items-center justify-center">
           More Projects are on my{" "}
           <a
             href="https://github.com/sagarhedaoo"

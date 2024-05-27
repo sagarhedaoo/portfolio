@@ -87,3 +87,7 @@
     background: linear-gradient(90deg, #ffa500 0%, #ffffff 100%);
   }
 }
+
+.custom-mb {
+  margin-bottom: 2.5rem !important; /* Adjust the value as needed */
+}
