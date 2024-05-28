@@ -40,7 +40,7 @@ export const gridItems = [
   {
     id: 4,
     title: "F1 OPT",
-    description: "",
+    description: "Visa Status",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
     titleClassName: "justify-start",
@@ -105,7 +105,7 @@ export const projects = [
     id: 4,
     title: "Activity API - Springboot",
     des: "Implemented a REST API using Spring MVC with CRUD operations, in-memory data handling, and comprehensive testing including unit and integration tests to ensure robust backend services",
-    img: "",
+    img: "/activity.jpg",
     iconLists: [
       "/docker.svg",
       "/java.svg",
