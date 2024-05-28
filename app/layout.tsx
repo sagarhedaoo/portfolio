@@ -24,11 +24,10 @@ export default function RootLayout({
         />
         <meta
           property="og:image"
-          content="https://sagarhedaoo.com/path-to-your-image.jpg"
+          content="https://sagarhedaoo.com/sagar-image.jpg"
         />
-        <meta property="og:url" content="https://sagarhedaoo.com/" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="og:site_name" content="Sagar Hedaoo's Portfolio" />
+        <meta property="og:url" content="Sagar Hedaoo Portfolio" />
+        <meta property="og:site_name" content="Sagar Hedaoo - Portfolio" />
         <meta
           name="twitter:image:alt"
           content="Sagar Hedaoo's Portfolio Thumbnail"
