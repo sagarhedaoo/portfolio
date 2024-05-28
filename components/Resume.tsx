@@ -2,6 +2,7 @@ import React from "react";
 import "tailwindcss/tailwind.css";
 import { FloatingNav } from "./ui/FloatingNav";
 import { navItems } from "@/data";
+import Link from "next/link";
 
 const Resume = () => {
   return (
@@ -956,48 +957,48 @@ const Resume = () => {
                   <section className="spacing-6 print:!hidden">
                     <nav className="relative text-[15px] font-medium text-black-100 spacing-0 flex flex-col space-y-2">
                       <div className="button-border pointer-events-none absolute -z-10 select-none d:border-gray-300/50 border-none border-transparent bg-gray-100"></div>
-                      <a
+                      <Link
                         className="rounded-md px-2 py-1 outline-none transition-all duration-75 hfa:outline-none hf:text-gray-700 hover:text-red-400"
                         href="/resume#summary"
                       >
                         Summary
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="rounded-md px-2 py-1 outline-none transition-all duration-75 hfa:outline-none hf:text-gray-700 hover:text-red-400"
                         href="/resume#experience"
                       >
                         Experience
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="rounded-md px-2 py-1 outline-none transition-all duration-75 hfa:outline-none hf:text-gray-700 hover:text-red-400"
                         href="/resume#projects"
                       >
                         Projects
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="rounded-md px-2 py-1 outline-none transition-all duration-75 hfa:outline-none hf:text-gray-700 hover:text-red-400"
                         href="/resume#education"
                       >
                         Education
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="rounded-md px-2 py-1 outline-none transition-all duration-75 hfa:outline-none hf:text-gray-700 hover:text-red-400"
                         href="/resume#skills"
                       >
                         Skills
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="rounded-md px-2 py-1 outline-none transition-all duration-75 hfa:outline-none hf:text-gray-700 hover:text-red-400"
                         href="/resume#certifications"
                       >
                         Certifications
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         className="rounded-md px-2 py-1 outline-none transition-all duration-75 hfa:outline-none hf:text-gray-700 hover:text-red-400"
                         href="/resume#references"
                       >
                         References
-                      </a>
+                      </Link>
                     </nav>
                   </section>
                   <section className="mt-2 spacing-1 print:!hidden ml-2">
