@@ -869,12 +869,12 @@ const Resume = () => {
                         className="button-border /*-translate-y-1/2*/ pointer-events-none absolute -z-10 select-none d:border-gray-300/50 border-none border-transparent bg-gray-100"
                         // style="opacity: 0 width: 0px height: 0px left: 0px top: 0px transition: opacity 0.1s ease 0s border-radius: 0px"
                       ></div>
-                      <a
+                      {/* <a
                         className="-ml-2 w-min rounded-md px-2 py-1 outline-none transition-all duration-75 hfa:outline-none hf:text-gray-700"
                         href="/resume#summary"
                       >
                         Summary
-                      </a>
+                      </a> */}
                     </div>
                   </section>
                 </aside>
