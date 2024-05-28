@@ -3,6 +3,7 @@ import "tailwindcss/tailwind.css";
 import { FloatingNav } from "./ui/FloatingNav";
 import { navItems } from "@/data";
 import Link from "next/link";
+import { BackgroundGradient } from "./ui/CardBackground";
 
 const Resume = () => {
   return (
@@ -946,12 +947,14 @@ const Resume = () => {
                 <aside className="top-[144px] mb-auto max-h-min print:!hidden lg:sticky lg:spacing-8">
                   <figure className="relative -top-2 z-0 h-70 w-50 print:!absolute print:!left-40 print:!top-6">
                     <div className="flex h-full items-center justify-center px-2">
-                      <img
-                        src="/sagar-image.jpg"
-                        width={402}
-                        height={498}
-                        className="rounded-sm shadow-xl shadow-sky-400/10"
-                      />
+                      <BackgroundGradient className="rounded-[22px] max-w-sm bg-white dark:bg-zinc-900">
+                        <img
+                          src="/sagar-image.jpg"
+                          width={402}
+                          height={498}
+                          className="rounded-[22px] shadow-xl shadow-sky-400/10"
+                        />
+                      </BackgroundGradient>
                     </div>
                   </figure>
                   <section className="spacing-6 print:!hidden">
