@@ -26,16 +26,28 @@ const loadingStates = [
   },
 ];
 
+const ONE_MINUTE = 60 * 1000;
+
 export default function Home() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    const totalDuration = loadingStates.length * 1000;
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, totalDuration);
+    const lastLoadedTime = localStorage.getItem("lastLoadedTime");
+    const currentTime = new Date().getTime();
 
-    return () => clearTimeout(timer);
+    if (
+      !lastLoadedTime ||
+      currentTime - parseInt(lastLoadedTime) > ONE_MINUTE
+    ) {
+      setLoading(true);
+      const totalDuration = loadingStates.length * 1000;
+      const timer = setTimeout(() => {
+        setLoading(false);
+        localStorage.setItem("lastLoadedTime", currentTime.toString());
+      }, totalDuration);
+
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   return (
