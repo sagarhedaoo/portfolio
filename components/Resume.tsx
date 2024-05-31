@@ -25,9 +25,9 @@ const Resume = () => {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                       className="lucide lucide-undo-2"
                     >
                       <path d="M9 14 4 9l5-5" />
@@ -58,7 +58,7 @@ const Resume = () => {
                             <path
                               fill-rule="evenodd"
                               d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
-                              clip-rule="evenodd"
+                              clipRule="evenodd"
                             ></path>
                           </svg>
                         </button>
@@ -299,8 +299,26 @@ const Resume = () => {
                         <section className="ml-0 spacing-1 print:!-ml-24 mt-3">
                           <h3 className="items-baseline text-sm tracking-normal spacing-1 ">
                             <strong className="text-[17px] font-bold text-gray-900 d:text-gray-100 print:!text-[16px] print:!font-bold">
-                              Explore-Hub Web Application
+                              Explore-Hub Web Application{" "}
                             </strong>
+                            <span>
+                              <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer animate-pulse"
+                                href="https://explorehub.lol/"
+                              >
+                                [Live]{" "}
+                              </a>
+                              <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
+                                href="https://github.com/Explore-Hub-Capstone-Project"
+                              >
+                                [Github]
+                              </a>
+                            </span>
                             <span className="flex flex-wrap items-baseline gap-x-2 gap-y-0 print:!text-[16px]">
                               <span className="font-semibold text-gray-600 d:text-gray-400">
                                 Final Semester Project
@@ -330,8 +348,26 @@ const Resume = () => {
                         <section className="ml-0 spacing-1 print:!-ml-24 mt-3">
                           <h3 className="items-baseline text-sm tracking-normal spacing-1 ">
                             <strong className="text-[17px] font-bold text-gray-900 d:text-gray-100 print:!text-[16px] print:!font-bold">
-                              Full Stack E-Commerce Web Application
+                              Full Stack E-Commerce Web Application{" "}
                             </strong>
+                            <span>
+                              <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer animate-pulse"
+                                href="https://e-commerce-eta-rosy.vercel.app"
+                              >
+                                [Live]{" "}
+                              </a>
+                              <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
+                                href="https://github.com/sagarhedaoo/E-Commerce"
+                              >
+                                [Github]
+                              </a>
+                            </span>
                             <span className="flex flex-wrap items-baseline gap-x-2 gap-y-0 print:!text-[16px]">
                               <span className="font-semibold text-gray-600 d:text-gray-400">
                                 Personal Project
@@ -361,8 +397,18 @@ const Resume = () => {
                         <section className="ml-0 spacing-1 print:!-ml-24 mt-3">
                           <h3 className="items-baseline text-sm tracking-normal spacing-1 ">
                             <strong className="text-[17px] font-bold text-gray-900 d:text-gray-100 print:!text-[16px] print:!font-bold">
-                              Spring Boot Application
+                              Spring Boot Application{" "}
                             </strong>
+                            <span>
+                              <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[14px] font-bold text-orange-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
+                                href="https://github.com/sagarhedaoo/WebAPI-Springboot"
+                              >
+                                [Github]
+                              </a>
+                            </span>
                             <span className="flex flex-wrap items-baseline gap-x-2 gap-y-0 print:!text-[16px]">
                               <span className="font-semibold text-gray-600 d:text-gray-400">
                                 Personal Learning Project
@@ -395,8 +441,16 @@ const Resume = () => {
                         <section className="ml-0 spacing-1 print:!-ml-24 mt-3">
                           <h3 className="items-baseline text-sm tracking-normal spacing-1 ">
                             <strong className="text-[17px] font-bold text-gray-900 d:text-gray-100 print:!text-[16px] print:!font-bold">
-                              Food Delivery Website
+                              Food Delivery Website{" "}
                             </strong>
+                            <a
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
+                              href="https://github.com/sagarhedaoo/food-app"
+                            >
+                              [Github]
+                            </a>
                             <span className="flex flex-wrap items-baseline gap-x-2 gap-y-0 print:!text-[16px]">
                               <span className="font-semibold text-gray-600 d:text-gray-400">
                                 Personal Project
