@@ -717,7 +717,7 @@ const Resume = () => {
                         <section className="relative max-w-prose spacing-1 print:!grid print:!max-w-3xl print:!grid-cols-[175px_1fr]">
                           <h3 className="items-baseline text-sm tracking-tight mt-4 spacing-1 ">
                             <strong className="text-[17px] font-bold text-gray-900 d:text-gray-100 print:!text-sm print:!font-semibold ">
-                              Programming Lnagauges
+                              Programming Languages
                             </strong>
                           </h3>
                           <p className="text-sm text-gray-500 marker:text-gray-400 d:text-gray-300/80 d:marker:text-gray-600 print:!mt-0">
