@@ -88,6 +88,132 @@ const Resume = () => {
                       </p>
                     </div>
                   </section>
+                  {/* OSS Start */}
+                  <section
+                    id="projects"
+                    className="relative -mx-4 scroll-mt-[122px] overflow-hidden px-4 spacing-4 print:!overflow-visible md:overflow-visible break-inside-avoid mt-4"
+                  >
+                    <header className="spacing-3 print:!-ml-24 ">
+                      <h2 className="flex items-baseline">
+                        <span className="flex items-baseline text-3xl font-bold tracking-tight text-gray-800 d:text-gray-100 print:!flex-1 print:!text-xl">
+                          <span className="min-w-[105px] mb-2 ">
+                            Open Source Contributions
+                          </span>
+                          <hr className="ml-6 mr-24 hidden border-dashed border-gray-400 print:block print:!flex-1" />
+                        </span>
+                        <button className="group ml-auto mr-2 rounded p-2 text-gray-400/90 transition-colors hfa:outline-none hf:bg-gray-100 hf:text-gray-900 print:!hidden">
+                          <span className="sr-only">
+                            Toggle Section Visibility
+                          </span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            fill="currentColor"
+                            aria-hidden="true"
+                            className="h-4 w-4 transition-all"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              d="M12.53 16.28a.75.75 0 01-1.06 0l-7.5-7.5a.75.75 0 011.06-1.06L12 14.69l6.97-6.97a.75.75 0 111.06 1.06l-7.5 7.5z"
+                              clip-rule="evenodd"
+                            ></path>
+                          </svg>
+                        </button>
+                      </h2>
+                      <hr className="h-px border-none bg-[linear-gradient(90deg,var(--line-color),var(--line-color)_50%,transparent_0,transparent)] bg-[length:8px_1px] [--line-color:theme(colors.gray.300/40)] d:[--line-color:theme(colors.gray.700/20)] print:!hidden mb-2 " />
+                    </header>
+                    <div className="relative transition-all duration-200 ease-linear print:!max-h-max">
+                      <div className="transition-[all,height] delay-[0s,0.2s]"></div>
+                      <div className="spacing-8 print:!spacing-3">
+                        {/* First OSS Start */}
+                        <section className="ml-0 spacing-1 print:!-ml-24 mt-3">
+                          <h3 className="items-baseline text-sm tracking-normal spacing-1 ">
+                            <strong className="text-[17px] font-bold text-gray-900 d:text-gray-100 print:!text-[16px] print:!font-bold">
+                              Responsively{" "}
+                            </strong>
+                            <span>
+                              <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
+                                href="https://responsively.app"
+                              >
+                                [Website]{" "}
+                              </a>
+                              <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
+                                href="https://github.com/responsively-org/responsively-app/pull/1244"
+                              >
+                                [GitHub-PR]
+                              </a>
+                            </span>
+                            <span className="flex flex-wrap items-baseline gap-x-2 gap-y-0 print:!text-[16px]">
+                              <span className="font-semibold text-gray-600 d:text-gray-400">
+                                Implemented a Scroll to Top feature in
+                                Responsively app, improving navigation
+                                efficiency and user engagement
+                              </span>
+                              <br />
+                              <span className="select-none text-sm text-gray-600 print:!text-gray-500">
+                                Technologies -
+                              </span>
+                              <span className="text-gray-400/80 print:!text-gray-500">
+                                <span className="hidden print:!inline sm:inline">
+                                  Electron, JavaScript, TypeScript, HTML, CSS
+                                </span>
+                              </span>
+                            </span>
+                          </h3>
+                        </section>
+                        {/* First OSS End */}
+                        {/* Second OSS Start */}
+                        <section className="ml-0 spacing-1 print:!-ml-24 mt-3">
+                          <h3 className="items-baseline text-sm tracking-normal spacing-1 ">
+                            <strong className="text-[17px] font-bold text-gray-900 d:text-gray-100 print:!text-[16px] print:!font-bold">
+                              Twenty CRM{" "}
+                            </strong>
+                            <span>
+                              <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
+                                href="https://twenty.com"
+                              >
+                                [Website]{" "}
+                              </a>
+                              <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
+                                href="https://github.com/responsively-org/responsively-app/pull/1244"
+                              >
+                                [GitHub-PR]
+                              </a>
+                            </span>
+                            <span className="flex flex-wrap items-baseline gap-x-2 gap-y-0 print:!text-[16px]">
+                              <span className="font-semibold text-gray-600 d:text-gray-400">
+                                Identified and resolved multiple UI bugs in
+                                Twenty CRM Software. Enhancing stability and
+                                user interaction
+                              </span>
+                              <br />
+                              <span className="select-none text-sm text-gray-600 print:!text-gray-500">
+                                Technologies -
+                              </span>
+                              <span className="text-gray-400/80 print:!text-gray-500">
+                                <span className="hidden print:!inline sm:inline">
+                                  TypeScript, GraphQL, PostgreSQL, Docker
+                                </span>
+                              </span>
+                            </span>
+                          </h3>
+                        </section>
+                        {/* Second OSS End */}
+                      </div>
+                    </div>
+                  </section>
                   {/* Start of Exp */}
                   <section
                     id="experience"
