@@ -90,7 +90,7 @@ const Resume = () => {
                   </section>
                   {/* OSS Start */}
                   <section
-                    id="projects"
+                    id="OpenSourceContributions"
                     className="relative -mx-4 scroll-mt-[122px] overflow-hidden px-4 spacing-4 print:!overflow-visible md:overflow-visible break-inside-avoid mt-4"
                   >
                     <header className="spacing-3 print:!-ml-24 ">
@@ -1190,6 +1190,12 @@ const Resume = () => {
                         href="/resume#summary"
                       >
                         Summary
+                      </Link>
+                      <Link
+                        className="rounded-md px-2 py-1 outline-none transition-all duration-75 hfa:outline-none hf:text-gray-700 hover:text-red-400"
+                        href="/resume#OpenSourceContributions"
+                      >
+                        OSS Contribution
                       </Link>
                       <Link
                         className="rounded-md px-2 py-1 outline-none transition-all duration-75 hfa:outline-none hf:text-gray-700 hover:text-red-400"
