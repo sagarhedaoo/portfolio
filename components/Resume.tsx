@@ -197,6 +197,7 @@ const Resume = () => {
                                 Identified and resolved multiple UI bugs in
                                 Twenty CRM Software. Enhancing stability and
                                 user interaction
+                                <br />
                               </span>
                               <br />
                               <span className="select-none text-sm text-gray-600 print:!text-gray-500">
@@ -211,6 +212,50 @@ const Resume = () => {
                           </h3>
                         </section>
                         {/* Second OSS End */}
+                        {/* Third OSS Start */}
+                        <section className="ml-0 spacing-1 print:!-ml-24 mt-3">
+                          <h3 className="items-baseline text-sm tracking-normal spacing-1 ">
+                            <strong className="text-[17px] font-bold text-gray-900 d:text-gray-100 print:!text-[16px] print:!font-bold">
+                              Reflex{" "}
+                            </strong>
+                            <span>
+                              <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
+                                href="https://reflex.dev"
+                              >
+                                [Website]{" "}
+                              </a>
+                              <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
+                                href="https://github.com/reflex-dev/reflex/pull/3333"
+                              >
+                                [GitHub-PR]
+                              </a>
+                            </span>
+                            <span className="flex flex-wrap items-baseline gap-x-2 gap-y-0 print:!text-[16px]">
+                              <span className="font-semibold text-gray-600 d:text-gray-400">
+                                Updated and refined the documentation for
+                                Reflex, facilitating easier adoption and
+                                understanding for new users
+                                <br />
+                              </span>
+                              <br />
+                              <span className="select-none text-sm text-gray-600 print:!text-gray-500">
+                                Technologies -
+                              </span>
+                              <span className="text-gray-400/80 print:!text-gray-500">
+                                <span className="hidden print:!inline sm:inline">
+                                  Python, Jinja, Docker, JavaScript
+                                </span>
+                              </span>
+                            </span>
+                          </h3>
+                        </section>
+                        {/* Third OSS End */}
                       </div>
                     </div>
                   </section>
