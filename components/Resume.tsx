@@ -12,7 +12,7 @@ const Resume = () => {
         <tbody className="block print:table-row-group  print:!min-h-screen">
           <tr className="block print:!table-row">
             <td className="block print:!table-cell">
-              <article className="relative mx-auto mb-16 grid max-w-6xl gap-12 px-4 py-16 print:!flex print:!py-0 print:!pl-24 md:px-8 lg:grid-cols-[1fr_200px] print:[&_*]:![-webkit-print-color-adjust:exact] print:[&_*]:![color-adjust:exact] print:[&_*]:![print-color-adjust:exact]">
+              <article className="relative mx-auto mb-16 grid max-w-7xl gap-12 px-4 py-16 print:!flex print:!py-0 print:!pl-24 md:px-8 lg:grid-cols-[1fr_200px] print:[&_*]:![-webkit-print-color-adjust:exact] print:[&_*]:![color-adjust:exact] print:[&_*]:![print-color-adjust:exact]">
                 <div className="snap-y snap-normal spacing-10">
                   <a
                     className="flex items-center space-x-2 hover:text-red-400"
@@ -140,31 +140,31 @@ const Resume = () => {
                               >
                                 [Website]{" "}
                               </a>
-                              <a
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
-                                href="https://github.com/responsively-org/responsively-app/pull/1244"
-                              >
-                                [GitHub-PR]
-                              </a>
                             </span>
-                            <span className="flex flex-wrap items-baseline gap-x-2 gap-y-0 print:!text-[16px]">
-                              <span className="font-semibold text-gray-600 d:text-gray-400">
+                            <br />
+                            <span className="select-none text-sm text-gray-600 print:!text-gray-500">
+                              Technologies -{" "}
+                            </span>
+                            <span className="text-gray-400/80 print:!text-gray-500">
+                              <span className="hidden print:!inline sm:inline">
+                                Electron, JavaScript, TypeScript, HTML, CSS
+                              </span>
+                            </span>
+                            <ul className="list-outside font-semibold list-disc pl-6 text-sm text-gray-600 marker:text-gray-400 d:text-gray-300/80 d:marker:text-gray-600 print:!text-base">
+                              <li className="pl-0">
                                 Implemented a Scroll to Top feature in
                                 Responsively app, improving navigation
-                                efficiency and user engagement
-                              </span>
-                              <br />
-                              <span className="select-none text-sm text-gray-600 print:!text-gray-500">
-                                Technologies -
-                              </span>
-                              <span className="text-gray-400/80 print:!text-gray-500">
-                                <span className="hidden print:!inline sm:inline">
-                                  Electron, JavaScript, TypeScript, HTML, CSS
-                                </span>
-                              </span>
-                            </span>
+                                efficiency and user engagement{" "}
+                                <a
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
+                                  href="https://github.com/responsively-org/responsively-app/pull/1244"
+                                >
+                                  [GitHub-PR]
+                                </a>
+                              </li>
+                            </ul>
                           </h3>
                         </section>
                         {/* First OSS End */}
@@ -183,32 +183,31 @@ const Resume = () => {
                               >
                                 [Website]{" "}
                               </a>
-                              <a
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
-                                href="https://github.com/responsively-org/responsively-app/pull/1244"
-                              >
-                                [GitHub-PR]
-                              </a>
                             </span>
-                            <span className="flex flex-wrap items-baseline gap-x-2 gap-y-0 print:!text-[16px]">
-                              <span className="font-semibold text-gray-600 d:text-gray-400">
-                                Identified and resolved multiple UI bugs in
-                                Twenty CRM Software. Enhancing stability and
-                                user interaction
-                                <br />
-                              </span>
-                              <br />
-                              <span className="select-none text-sm text-gray-600 print:!text-gray-500">
-                                Technologies -
-                              </span>
-                              <span className="text-gray-400/80 print:!text-gray-500">
-                                <span className="hidden print:!inline sm:inline">
-                                  TypeScript, GraphQL, PostgreSQL, Docker
-                                </span>
+                            <br />
+                            <span className="select-none text-sm text-gray-600 print:!text-gray-500">
+                              Technologies -{""}
+                            </span>
+                            <span className="text-gray-400/80 print:!text-gray-500">
+                              <span className="hidden print:!inline sm:inline">
+                                TypeScript, GraphQL, PostgreSQL, Docker
                               </span>
                             </span>
+                            <ul className="list-outside font-semibold list-disc pl-6 text-sm text-gray-600 marker:text-gray-400 d:text-gray-300/80 d:marker:text-gray-600 print:!text-base">
+                              <li className="pl-0">
+                                Resolved Snackbar bugs in Twenty CRM Software as
+                                per Figma file. Enhancing stability and user
+                                interaction{" "}
+                                <a
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
+                                  href="https://github.com/twentyhq/twenty/pull/5700"
+                                >
+                                  [GitHub-PR]
+                                </a>
+                              </li>
+                            </ul>
                           </h3>
                         </section>
                         {/* Second OSS End */}
@@ -227,32 +226,43 @@ const Resume = () => {
                               >
                                 [Website]{" "}
                               </a>
-                              <a
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
-                                href="https://github.com/reflex-dev/reflex/pull/3333"
-                              >
-                                [GitHub-PR]
-                              </a>
                             </span>
-                            <span className="flex flex-wrap items-baseline gap-x-2 gap-y-0 print:!text-[16px]">
-                              <span className="font-semibold text-gray-600 d:text-gray-400">
+                            <br />
+                            <span className="select-none text-sm text-gray-600 print:!text-gray-500">
+                              Technologies -{" "}
+                            </span>
+                            <span className="text-gray-400/80 print:!text-gray-500">
+                              <span className="hidden print:!inline sm:inline">
+                                Python, Jinja, Docker, JavaScript
+                              </span>
+                            </span>
+                            <ul className="list-outside font-semibold list-disc pl-6 text-sm text-gray-600 marker:text-gray-400 d:text-gray-300/80 d:marker:text-gray-600 print:!text-base">
+                              <li className="pl-0">
+                                Updated Radio group component wrapping it with
+                                latest Radix UI component{" "}
+                                <a
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
+                                  href="https://github.com/reflex-dev/reflex/pull/3474"
+                                >
+                                  [GitHub-PR]
+                                </a>
+                              </li>
+                              <li className="pl-0">
                                 Updated and refined the documentation for
                                 Reflex, facilitating easier adoption and
-                                understanding for new users
-                                <br />
-                              </span>
-                              <br />
-                              <span className="select-none text-sm text-gray-600 print:!text-gray-500">
-                                Technologies -
-                              </span>
-                              <span className="text-gray-400/80 print:!text-gray-500">
-                                <span className="hidden print:!inline sm:inline">
-                                  Python, Jinja, Docker, JavaScript
-                                </span>
-                              </span>
-                            </span>
+                                understanding for new users{" "}
+                                <a
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
+                                  href="https://github.com/reflex-dev/reflex/pull/3333"
+                                >
+                                  [GitHub-PR]
+                                </a>
+                              </li>
+                            </ul>
                           </h3>
                         </section>
                         {/* Third OSS End */}
