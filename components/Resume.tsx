@@ -161,7 +161,7 @@ const Resume = () => {
                                   className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
                                   href="https://github.com/responsively-org/responsively-app/pull/1244"
                                 >
-                                  [GitHub-PR]
+                                  [Github-PR]
                                 </a>
                               </li>
                             </ul>
@@ -204,7 +204,7 @@ const Resume = () => {
                                   className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
                                   href="https://github.com/twentyhq/twenty/pull/5700"
                                 >
-                                  [GitHub-PR]
+                                  [Github-PR]
                                 </a>
                               </li>
                             </ul>
@@ -246,7 +246,7 @@ const Resume = () => {
                                   className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
                                   href="https://github.com/reflex-dev/reflex/pull/3474"
                                 >
-                                  [GitHub-PR]
+                                  [Github-PR]
                                 </a>
                               </li>
                               <li className="pl-0">
@@ -259,7 +259,7 @@ const Resume = () => {
                                   className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
                                   href="https://github.com/reflex-dev/reflex/pull/3333"
                                 >
-                                  [GitHub-PR]
+                                  [Github-PR]
                                 </a>
                               </li>
                             </ul>
