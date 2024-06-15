@@ -69,22 +69,14 @@ const Resume = () => {
                       <div className="transition-[all,height] delay-[0s,0.2s]"></div>
                       <p className="text-[15px] leading-relaxed text-gray-500 d:text-gray-300 print:!-ml-24 print:!max-w-3xl print:!text-base">
                         I am a passionate self-taught software developer. I
-                        specialize in front-end and backend development using
+                        specialize in front-end and back-end development using
                         Typescript, React.js, Node.js & AWS. Throughout my
                         career, My journey in computer science has been rich and
                         diverse, beginning with a Bachelor of Engineering in
                         India and advancing through a Master&apos;s at Stevens
                         Institute of Technology, where I earned a scholarship
-                        for my academic excellence. I&apos;ve applied my skills
-                        in various professional roles, notably at CloudCraft
-                        Technologies, where I developed web applications using
-                        the MERN stack and optimized website traffic through
-                        SEO. My projects, including a full-stack e-commerce site
-                        and a mobile app suite for campus communication, reflect
-                        my passion for leveraging technology to create practical
-                        solutions, while internships like at Oil and Natural Gas
-                        Corporation Ltd enhanced my analytical and systems
-                        integration skills.
+                        for my academic excellence. Currently, I am open to
+                        roles and contributing to Open source projects.
                       </p>
                     </div>
                   </section>
