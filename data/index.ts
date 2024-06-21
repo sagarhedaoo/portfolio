@@ -84,7 +84,7 @@ export const projects = [
     des: "Architected a robust, end-to-end e-commerce website utilizing JavaScript, Node.js, React, NextJS, Tailwind CSS and MongoDB with user authentication and user privacy. Employed Amazon S3 to store project images and AWS to deploy website seamlessly. ",
     img: "/ecommerce.svg",
     iconLists: ["/next.svg", "/re.svg", "/js.svg", "/node.svg", "/stripe.svg"],
-    link: "https://e-commerce-eta-rosy.vercel.app",
+    link: "https://github.com/sagarhedaoo/E-Commerce",
   },
   {
     id: 3,
