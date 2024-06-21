@@ -6,6 +6,34 @@ import Link from "next/link";
 import { BackgroundGradient } from "./ui/CardBackground";
 
 const Resume = () => {
+  const downloadResume = () => {
+    const filePath = "/files/resume.pdf";
+    const date = new Date();
+    const formattedDate =
+      date.getMonth() + 1 + "-" + date.getDate() + "-" + date.getFullYear();
+    fetch(filePath)
+      .then((response) => {
+        if (response.ok) return response.blob();
+        throw new Error("Network response was not ok.");
+      })
+      .then((blob) => {
+        const url = window.URL.createObjectURL(blob);
+        const element = document.createElement("a");
+        element.href = url;
+        element.download = "SagarHedaoo_resume-" + formattedDate + ".pdf";
+        document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element);
+        window.URL.revokeObjectURL(url);
+      })
+      .catch((error) => {
+        console.error(
+          "There has been a problem with your fetch operation:",
+          error
+        );
+      });
+  };
+
   return (
     <div className="min-h-screen print:!mx-auto print:!w-full">
       <table className="margin-0 padding-10 relative block min-h-screen appearance-none border-none text-gray-900 print:!table [&_td]:p-0">
@@ -14,27 +42,95 @@ const Resume = () => {
             <td className="block print:!table-cell">
               <article className="relative mx-auto mb-16 grid max-w-7xl gap-12 px-4 py-16 print:!flex print:!py-0 print:!pl-24 md:px-8 lg:grid-cols-[1fr_200px] print:[&_*]:![-webkit-print-color-adjust:exact] print:[&_*]:![color-adjust:exact] print:[&_*]:![print-color-adjust:exact]">
                 <div className="snap-y snap-normal spacing-10">
-                  <a
-                    className="flex items-center space-x-2 hover:text-red-400"
-                    href="/"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="19"
-                      height="19"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="lucide lucide-undo-2"
+                  <div className="flex justify-between space-x-2 ">
+                    <a
+                      className="flex items-center space-x-2 hover:text-red-400"
+                      href="/"
                     >
-                      <path d="M9 14 4 9l5-5" />
-                      <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5v0a5.5 5.5 0 0 1-5.5 5.5H11" />
-                    </svg>
-                    <span>Back to Portfolio</span>
-                  </a>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="19"
+                        height="19"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="lucide lucide-undo-2"
+                      >
+                        <path d="M9 14 4 9l5-5" />
+                        <path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5v0a5.5 5.5 0 0 1-5.5 5.5H11" />
+                      </svg>
+                      <span>Back to Portfolio</span>
+                    </a>
+
+                    <div className="hover:text-red-400">
+                      <button
+                        id="downloadBtn"
+                        value="download"
+                        onClick={downloadResume}
+                        className="flex items-center justify-center space-x-2 shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400"
+                      >
+                        <span>Resume</span>
+                        <svg
+                          width="20px"
+                          height="20px"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="#000000"
+                        >
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                          <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          ></g>
+                          <g id="SVGRepo_iconCarrier">
+                            <title></title>
+                            <g id="Complete">
+                              <g id="download">
+                                <g>
+                                  <path
+                                    d="M3,12.3v7a2,2,0,0,0,2,2H19a2,2,0,0,0,2-2v-7"
+                                    fill="none"
+                                    stroke="#000000"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                  ></path>
+                                  <g>
+                                    <polyline
+                                      data-name="Right"
+                                      fill="none"
+                                      id="Right-2"
+                                      points="7.9 12.3 12 16.3 16.1 12.3"
+                                      stroke="#000000"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                    ></polyline>
+                                    <line
+                                      fill="none"
+                                      stroke="#000000"
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      stroke-width="2"
+                                      x1="12"
+                                      x2="12"
+                                      y1="2.7"
+                                      y2="14.2"
+                                    ></line>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+
                   <section
                     id="summary"
                     className="relative -mx-4 scroll-mt-[122px] overflow-hidden px-4 spacing-4 print:!overflow-visible md:overflow-visible break-inside-avoid print:!max-w-3xl"
