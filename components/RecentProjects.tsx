@@ -1,7 +1,8 @@
 import { projects } from "@/data";
 import React from "react";
 import { PinContainer } from "./ui/3d-pin";
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaLocationArrow, FaTv } from "react-icons/fa6";
+// import { TbLivePhoto } from "react-icons/tb";
 
 const RecentProjects = () => {
   return (
@@ -11,7 +12,7 @@ const RecentProjects = () => {
         <span className="text-orange-400">Recent Projects</span>
       </h1>
       <div className="flex flex-wrap items-start justify-center p-2 gap-x-24 gap-y-8 md:-mt-30 sm:mt-20">
-        {projects.map(({ id, title, des, img, iconLists, link }) => (
+        {projects.map(({ id, title, des, img, iconLists, link, liveLink }) => (
           <div
             key={id}
             className="flex items-center justify-center w-[80vw] sm:h-[41rem] md:h-[30rem] sm:w-[570px] md:mb-15 lg:mb-20 sm:mb-20 mb-10! min-h-[30rem]"
@@ -45,17 +46,37 @@ const RecentProjects = () => {
                   ))}
                 </div>
 
-                <a
-                  href={link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex justify-center items-center"
-                >
-                  <p className="flex lg:text-xl md:text-xs text-sm text-orange-400">
-                    Go to Github
-                  </p>
-                  <FaLocationArrow className="ms-3" color="#f1b872" />
-                </a>
+                <div className="flex gap-4">
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center items-center"
+                  >
+                    <p className="flex lg:text-xl md:text-xs text-sm text-orange-400">
+                      Go to Github
+                    </p>
+                    <FaLocationArrow className="ms-3" color="#f1b872" />
+                  </a>
+
+                  {liveLink ? (
+                    <a
+                      href={liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex justify-center items-center"
+                    >
+                      {" "}
+                      <p className="flex lg:text-xl md:text-xs text-sm text-red-500 animate-pulse ">
+                        Live
+                      </p>
+                      {/* <TbLivePhoto /> */}
+                      <FaTv className="ms-3 animate-pulse" color="#e31f1f" />
+                    </a>
+                  ) : (
+                    " "
+                  )}
+                </div>
               </div>
             </PinContainer>
           </div>

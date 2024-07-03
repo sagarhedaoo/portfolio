@@ -72,6 +72,21 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "AI Form Builder",
+    des: "AI Form Builder is a SaaS platform designed to streamline the creation and management of dynamic forms. Leveraging NextJS, JavaScript, Tailwind CSS, PostgreSQL, and a suite of web UI components, this tool empowers users to build, customize, and manage forms effortlessly. ",
+    img: "/aiformbuilder.svg",
+    iconLists: [
+      "/next.svg",
+      "/js.svg",
+      "/postgresql.svg",
+      "/tail.svg",
+      "/stripe.svg",
+    ],
+    link: "https://github.com/sagarhedaoo/form-mint/",
+    liveLink: "https://form-mint.vercel.app/",
+  },
+  {
+    id: 2,
     title: "ExploreHub",
     des: "ExploreHub is a comprehensive travel planning system that empowers users to create customized itineraries with ease.It aims to be the ultimate travel planning companion, transforming trip planning from a chore into an exciting adventure.",
     img: "/explorehub.svg",
@@ -79,7 +94,7 @@ export const projects = [
     link: "https://www.explorehub.lol/",
   },
   {
-    id: 2,
+    id: 3,
     title: "E-Commerce Full Stack",
     des: "Architected a robust, end-to-end e-commerce website utilizing JavaScript, Node.js, React, NextJS, Tailwind CSS and MongoDB with user authentication and user privacy. Employed Amazon S3 to store project images and AWS to deploy website seamlessly. ",
     img: "/ecommerce.svg",
@@ -87,7 +102,7 @@ export const projects = [
     link: "https://github.com/sagarhedaoo/E-Commerce",
   },
   {
-    id: 3,
+    id: 4,
     title: "Airbnb Clone",
     des: "Airbnb your home is the menu where users can list their places. Users can favorite using the like option and then those listings will be displayed in seperate favorites page. Reservations Page displays the reservations that users did",
     img: "/airbnb.svg",
@@ -101,7 +116,7 @@ export const projects = [
     link: "https://github.com/sagarhedaoo/Airbnb-clone",
   },
   {
-    id: 4,
+    id: 5,
     title: "Activity API - Springboot",
     des: "Implemented a REST API using Spring MVC with CRUD operations, in-memory data handling, and comprehensive testing including unit and integration tests to ensure robust backend services",
     img: "/activity.jpg",
