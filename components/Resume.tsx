@@ -620,14 +620,14 @@ const Resume = () => {
                               Explore-Hub Web Application{" "}
                             </strong>
                             <span>
-                              <a
+                              {/* <a
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer animate-pulse"
                                 href="https://explorehub.lol/"
                               >
                                 [Live]{" "}
-                              </a>
+                              </a> */}
                               <a
                                 target="_blank"
                                 rel="noopener noreferrer"
