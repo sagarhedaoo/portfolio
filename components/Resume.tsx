@@ -564,6 +564,55 @@ const Resume = () => {
                     <div className="relative transition-all duration-200 ease-linear print:!max-h-max">
                       <div className="transition-[all,height] delay-[0s,0.2s]"></div>
                       <div className="spacing-8 print:!spacing-3">
+                        {/* AI Form Project Start */}
+                        <section className="ml-0 spacing-1 print:!-ml-24 mt-3">
+                          <h3 className="items-baseline text-sm tracking-normal spacing-1 ">
+                            <strong className="text-[17px] font-bold text-gray-900 d:text-gray-100 print:!text-[16px] print:!font-bold">
+                              AI Form Builder SaaS Application{" "}
+                            </strong>
+                            <span>
+                              <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer animate-pulse"
+                                href="https://form-mint.vercel.app/"
+                              >
+                                [Live]{" "}
+                              </a>
+                              <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-[14px] font-bold text-red-400 d:text-gray-100 print:!text-[16px] print:!font-bold  cursor-pointer"
+                                href="https://github.com/sagarhedaoo/form-mint"
+                              >
+                                [Github]
+                              </a>
+                            </span>
+                            <span className="flex flex-wrap items-baseline gap-x-2 gap-y-0 print:!text-[16px]">
+                              <span className="font-semibold text-gray-600 d:text-gray-400">
+                                Personal Project
+                              </span>
+                              <span className="select-none text-sm text-gray-300 print:!text-gray-500">
+                                -
+                              </span>
+                              <span className="text-gray-400/80 print:!text-gray-500">
+                                <span className="hidden print:!inline sm:inline">
+                                  NextJS, JavaScript, PostgreSQL, Tailwind CSS
+                                </span>
+                              </span>
+                            </span>
+                          </h3>
+                          <p className="text-sm leading-relaxed text-gray-600 d:text-gray-300">
+                            Developed a SaaS AI Form builder using NextJS,
+                            JavaScript, Tailwind CSS, PostgreSQL, and various
+                            Web UI Components. Deployed Google’s Gemini 1.5
+                            flash model to fetch responses according to users
+                            requests. Users can take responses, edit forms,
+                            delete forms, customize forms and export the
+                            responses to Excel.
+                          </p>
+                        </section>
+                        {/* AI Form Project End */}
                         {/* First Project Start */}
                         <section className="ml-0 spacing-1 print:!-ml-24 mt-3">
                           <h3 className="items-baseline text-sm tracking-normal spacing-1 ">
