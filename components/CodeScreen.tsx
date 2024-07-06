@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { FaCross } from "react-icons/fa6";
 import CodeScreenIndex from "./CodeScreenIndex";
 import CodeScreenGoals from "./CodeScreenGoals";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const CodeScreen = () => {
   const [selected, setSelected] = useState("/index.tsx");
