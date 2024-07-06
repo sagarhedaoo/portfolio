@@ -3,11 +3,12 @@ import React, { useState } from "react";
 import { FaCross } from "react-icons/fa6";
 import CodeScreenIndex from "./CodeScreenIndex";
 import CodeScreenGoals from "./CodeScreenGoals";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const CodeScreen = () => {
   const [selected, setSelected] = useState("/index.tsx");
 
-  const handleClick = (buttonName) => {
+  const handleClick = (buttonName: any) => {
     setSelected(buttonName);
   };
 
@@ -54,8 +55,8 @@ const CodeScreen = () => {
           onClick={() => handleClick("/index.tsx")}
           className={`h-[40px] w-[150px] flex justify-center items-center ${
             selected === "/index.tsx"
-              ? "bg-white-200 border-t-2  border-l-2 border-r-2"
-              : "hover:bg-white-200"
+              ? "bg-white-200 border-t-2  border-l-2 border-r-2 rounded-t-xl"
+              : "hover:bg-white-200 hover:rounded-t-xl"
           }`}
         >
           /index.tsx
@@ -64,21 +65,16 @@ const CodeScreen = () => {
           onClick={() => handleClick("/goals.tsx")}
           className={`h-[40px] w-[150px] flex justify-center items-center ${
             selected === "/goals.tsx"
-              ? "bg-white-200 border-t-2 border-l-2 border-r-2"
-              : "hover:bg-white-200"
+              ? "bg-white-200 border-t-2 border-l-2 border-r-2 rounded-t-xl"
+              : "hover:bg-white-200 hover:rounded-t-xl"
           }`}
         >
           /goals.tsx
         </button>
       </div>
-      <div className="">
-        <div className="pt-0 ">
-          {selected === "/index.tsx" ? (
-            <CodeScreenIndex />
-          ) : (
-            <CodeScreenGoals />
-          )}
-        </div>
+
+      <div className="transition-opacity duration-300 ease-in-out">
+        {selected === "/index.tsx" ? <CodeScreenIndex /> : <CodeScreenGoals />}
       </div>
     </div>
   );
