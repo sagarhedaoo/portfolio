@@ -40,10 +40,15 @@ const config = {
           100: "#BEC1DD",
           200: "#C1C2D3",
         },
+
+        // macosRedCross: "rgba(255,95,87,100%",
         blue: {
           "100": "#E4ECFF",
         },
+        blueImport: "rgba(155, 219, 252, 100%)",
+        deepPurple: "#9c27b0",
         purple: "#CBACF9",
+        purple1: "rgba(183,126,179, 100%)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -163,7 +168,13 @@ const config = {
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
     },
+
+    fontFamily: {
+      sans: ["ui-sans-serif", "system-ui"],
+      sourceCodePro: ["Source Code Pro", "monospace"],
+    },
   },
+
   plugins: [
     require("tailwindcss-animate"),
     addVariablesForColors,

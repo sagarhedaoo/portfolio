@@ -1,32 +1,84 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { FaCross } from "react-icons/fa6";
+import CodeScreenIndex from "./CodeScreenIndex";
+import CodeScreenGoals from "./CodeScreenGoals";
 
 const CodeScreen = () => {
+  const [selected, setSelected] = useState("/index.tsx");
+
+  const handleClick = (buttonName) => {
+    setSelected(buttonName);
+  };
+
   return (
-    <div className="text-black border border-black h-[600px] w-full flex justify-start items-start">
-      <div className="h-[45px] w-[600px] flex justify-start p-3 border gap-2 border-black bg-gray-400">
-        <button className="h-5 w-5 rounded-full">
-          <Image
-            src="/macos-close.svg"
-            height={60}
-            width={60}
-            alt="close"
-            className="hover:bg-red-600  hover:text-white rounded-full "
-          />
+    <div className="text-black border-double border-4 rounded-lg border-black h-[600px] overflow-hidden  w-[700px]">
+      <div className="h-[45px] w-[700px] flex flex-row justify-start p-3 gap-2 ">
+        <button className="h-4 w-4 rounded-full bg-red-500 cursor-pointer group relative">
+          <div className="absolute inset-0 flex items-center justify-center h-full w-full">
+            <Image
+              src="/macos-close.svg"
+              height={12}
+              width={12}
+              alt="close"
+              className="hidden group-hover:block bg-red-500 hover:text-white rounded-full"
+            />
+          </div>
         </button>
-        <button className="h-5 w-5 border-2 rounded-full border-black  flex justify-center items-center hover:bg-yellow-500">
-          -
+        <button className="h-4 w-4 rounded-full bg-yellow-400 cursor-pointer group relative">
+          <div className="absolute inset-0 flex items-center justify-center h-full w-full">
+            <Image
+              src="/macos-minimize.svg"
+              height={15}
+              width={15}
+              alt="close"
+              className="hidden group-hover:block bg-yellow-400 hover:text-white rounded-full"
+            />
+          </div>
         </button>
-        <button className="h-5 w-5 rounded-full">
-          <Image
-            src="/macos-minimize.svg"
-            height={30}
-            width={30}
-            alt="close"
-            className="hover:bg-green-600 border-2 border-black p-0.5  hover:text-white rounded-full "
-          />
+        <button className="h-4 w-4 rounded-full bg-green-400 cursor-pointer group relative">
+          <div className="absolute inset-0 flex items-center justify-center h-full w-full">
+            <Image
+              src="/macos-green.svg"
+              height={15}
+              width={15}
+              alt="close"
+              className="hidden group-hover:block bg-green-400 hover:text-white rounded-full"
+            />
+          </div>
         </button>
+      </div>
+      {/* <hr className="h-0.5 ml-3 mr-3 bg-gray-100 border-0 rounded dark:bg-gray-700 mb-1" /> */}
+      <div className="h-[40px] flex justify-start group items-start cursor-pointer border-b-2">
+        <button
+          onClick={() => handleClick("/index.tsx")}
+          className={`h-[40px] w-[150px] flex justify-center items-center ${
+            selected === "/index.tsx"
+              ? "bg-white-200 border-t-2  border-l-2 border-r-2"
+              : "hover:bg-white-200"
+          }`}
+        >
+          /index.tsx
+        </button>
+        <button
+          onClick={() => handleClick("/goals.tsx")}
+          className={`h-[40px] w-[150px] flex justify-center items-center ${
+            selected === "/goals.tsx"
+              ? "bg-white-200 border-t-2 border-l-2 border-r-2"
+              : "hover:bg-white-200"
+          }`}
+        >
+          /goals.tsx
+        </button>
+      </div>
+      <div className="">
+        <div className="pt-0 ">
+          {selected === "/index.tsx" ? (
+            <CodeScreenIndex />
+          ) : (
+            <CodeScreenGoals />
+          )}
+        </div>
       </div>
     </div>
   );
