@@ -1,18 +1,6 @@
-import React, { useEffect, useRef } from "react";
-import "highlight.js/styles/xcode.css";
-// import "highlight.js/styles/monokai.css";
-import hljs from "highlight.js/lib/core";
-import javascript from "highlight.js/lib/languages/javascript";
-
-hljs.registerLanguage("javascript", javascript);
+import React from "react";
 
 const CodeScreenIndex = () => {
-  // const codeRef = useRef(null);
-
-  // useEffect(() => {
-  //   hljs.highlightBlock(codeRef.current);
-  // }, []);
-
   return (
     <div className="w-full h-full p-2 font-sourceCodePro overflow-scroll">
       <span>
@@ -27,13 +15,6 @@ const CodeScreenIndex = () => {
         <span className="text-purple1"> from </span>
         <span className="text-orange-500"> &apos;react&apos;;</span>
       </span>
-      {/* <br />
-      <span>
-        <span className="text-deepPurple">import</span>{" "}
-        <span className="text-blue-600">axios </span>
-        <span className="text-deepPurple">from </span>
-        <span className="text-orange-500">&apos;axios&apos;;</span>
-      </span> */}
       <br />
       <br />
       <span className="text-blue-600">

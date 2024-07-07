@@ -56,11 +56,11 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         {loading ? (
           <div className="w-full h-[100vh] flex items-center justify-center bg-transparent">
-            <Loader
+            {/* <Loader
               loadingStates={loadingStates}
               loading={loading}
               duration={1000}
-            />
+            /> */}
           </div>
         ) : (
           <>
