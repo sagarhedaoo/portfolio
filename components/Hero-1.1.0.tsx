@@ -8,6 +8,7 @@ import CodeScreen from "./CodeScreen";
 import { Boxes } from "./ui/background-boxes";
 import { BackgroundGradientAnimation } from "./ui/BackgroundGradientAnimation";
 import { BackgroundBeams } from "./ui/background-beams";
+import BoxReveal from "./magicui/box-reveal";
 
 const Herov1 = () => {
   //   const words = ["Hello 👋", "Namaste 🙏"];
@@ -24,33 +25,54 @@ const Herov1 = () => {
               <div className="text-4xl font-normal text-neutral-600 dark:text-neutral-400">
                 <FlipWords words={words} className="mb-2" />
                 <br />
-                <span className="text-6xl">
+                {/* <span className="text-6xl">
                   I&apos;m <span className="text-orange-400">Sagar Hedaoo</span>
-                </span>
+                </span> */}
+
+                <BoxReveal boxColor={"#e97f41"} duration={0.5}>
+                  <p className="text-6xl mb-2">
+                    I&apos;m{" "}
+                    <span className="text-orange-400">Sagar Hedaoo</span>
+                  </p>
+                </BoxReveal>
+
                 <br />
-                <span className="text-2xl">
+                {/* <span className="text-2xl">
                   Frontend Developer based out of New Jersey.
-                </span>
+                </span> */}
+
+                <BoxReveal boxColor={"#e97f41"} duration={0.5}>
+                  <h2 className="text-2xl">
+                    <span className="text-orange-400">Frontend Developer </span>
+                    based out of New Jersey.
+                  </h2>
+                </BoxReveal>
+
                 <div className="flex text-base gap-4">
                   <a
                     href="#about"
                     className="hover:-translate-y-1 hover:scale-110 transition-all"
                   >
-                    <MagicButton
-                      title="Show My Work"
-                      icon={<FaLocationArrow />}
-                      position="right"
-                    />
+                    <BoxReveal boxColor={"#e97f41"} duration={0.5}>
+                      <MagicButton
+                        title="Show My Work"
+                        icon={<FaLocationArrow />}
+                        position="right"
+                      />
+                    </BoxReveal>
                   </a>
+
                   <Link
                     href="/resume"
                     className="hover:-translate-y-1 hover:scale-110 transition-all"
                   >
-                    <MagicButton
-                      title="Resume"
-                      icon={<FaLocationArrow />}
-                      position="right"
-                    />
+                    <BoxReveal boxColor={"#e97f41"} duration={0.5}>
+                      <MagicButton
+                        title="Resume"
+                        icon={<FaLocationArrow />}
+                        position="right"
+                      />
+                    </BoxReveal>
                   </Link>
                 </div>
               </div>
