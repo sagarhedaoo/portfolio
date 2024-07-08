@@ -9,6 +9,7 @@ import Lottie from "react-lottie";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
 import { BackgroundGradient } from "./CardBackground";
+import Image from "next/image";
 
 export const BentoGrid = ({
   className,
@@ -92,7 +93,7 @@ export const BentoGridItem = ({
           )}
         </div>
 
-        <div
+        {/* <div
           className={`absolute right-0 -bottom-5 ${
             id === 5 && "w-full opacity-80"
           } `}
@@ -105,7 +106,7 @@ export const BentoGridItem = ({
               className="object-cover object-center w-full h-full"
             />
           )}
-        </div>
+        </div> */}
 
         {id === 6 && (
           <BackgroundGradientAnimation></BackgroundGradientAnimation>

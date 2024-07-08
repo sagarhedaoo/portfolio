@@ -21,6 +21,20 @@ export const BackgroundGradient = ({
       backgroundPosition: ["0, 50%", "100% 50%", "0 50%"],
     },
   };
+
+  const motionProps = animate
+    ? {
+        variants: variants,
+        initial: "initial",
+        animate: "animate",
+        transition: {
+          duration: 5,
+          repeat: Infinity,
+          repeatType: "reverse",
+        },
+      }
+    : {};
+
   return (
     <div className={cn("relative p-[4px] group", containerClassName)}>
       <motion.div
