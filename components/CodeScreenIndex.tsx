@@ -2,7 +2,7 @@ import React from "react";
 
 const CodeScreenIndex = () => {
   return (
-    <div className="w-full h-full p-2 font-sourceCodePro overflow-scroll">
+    <div className="w-full h-full p-2 font-sourceCodePro overflow-scroll ">
       <span>
         <span className="text-deepPurple">import</span>{" "}
         <span className="text-blue-600">

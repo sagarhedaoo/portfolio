@@ -42,6 +42,7 @@ const config = {
           300: "#E7E5E4",
           400: "#F5F5F4",
           500: "#F5F5F4",
+          600: "#FAFAF9",
         },
 
         // macosRedCross: "rgba(255,95,87,100%",
