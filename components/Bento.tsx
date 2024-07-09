@@ -14,7 +14,7 @@ import TechStack from "./TechStack";
 import b5 from "../public/b5.svg";
 import { SquareFunction } from "lucide-react";
 import { View } from "lucide-react";
-import { Calendar } from "./ui/Calender";
+import Globe from "./ui/globe";
 
 const features = [
   {
@@ -35,7 +35,8 @@ const features = [
     href: "/",
     cta: "Learn more",
     background: <Image src={stevens} fill={true} alt="stevens" />,
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3",
+    className:
+      "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3 h-[350px] md:h-full lg:h-full",
   },
   {
     id: 3,
@@ -44,8 +45,10 @@ const features = [
     description: "Open to relocation across United States",
     href: "/",
     cta: "Learn more",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4",
+    // background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: <Globe />,
+    className:
+      "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4 md:h-full lg:h-full h-[150px]",
   },
   {
     id: 4,
@@ -64,6 +67,7 @@ const features = [
     description: "",
     href: "/",
     cta: "Learn more",
+    // background: <Globe className="" />,
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
   },

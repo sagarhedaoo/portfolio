@@ -3,7 +3,7 @@ import React from "react";
 
 const TechStack = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-5 p-4 gap-4">
+    <div className="grid grid-cols-5 p-4 gap-4">
       <Image
         src="/re.svg"
         height={40}

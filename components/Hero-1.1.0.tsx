@@ -5,14 +5,11 @@ import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 import Link from "next/link";
 import CodeScreen from "./CodeScreen";
-import { Boxes } from "./ui/background-boxes";
-import { BackgroundGradientAnimation } from "./ui/BackgroundGradientAnimation";
-import { BackgroundBeams } from "./ui/background-beams";
 import BoxReveal from "./magicui/box-reveal";
 
 const Herov1 = () => {
-  //   const words = ["Hello 👋", "Namaste 🙏"];
-  const words = ["Hello", "Namaste", "Bonjour"];
+  const words = ["Hello 👋", "Namaste 🙏", "Bonjour 👋"];
+  // const words = ["Hello", "Namaste", "Bonjour"];
   return (
     <div className="pb-20 mt-36">
       <div className="flex justify-center relative z-10 sm:flex-row gap-5">
@@ -42,7 +39,7 @@ const Herov1 = () => {
                 </span> */}
 
                 <BoxReveal boxColor={"#e97f41"} duration={0.5}>
-                  <h2 className="text-2xl">
+                  <h2 className="text-2xl mb-4 md:mb-0 lg:mb-0">
                     <span className="text-orange-400">Frontend Developer </span>
                     based out of New Jersey.
                   </h2>
@@ -79,7 +76,8 @@ const Herov1 = () => {
               {/* <div>Header line</div> */}
             </div>
             {/* Right section */}
-            <div className="mx-auto container flex justify-center items-center sm:w-1/2 mt-8 sm:mt-0">
+            <div className="mx-auto  flex justify-center items-center w-[350px] mt-8 sm:mt-0">
+              {/* <div className="w-[full] mx-auto mt-8 sm:mt-0"> */}
               <div>
                 <CodeScreen />
               </div>

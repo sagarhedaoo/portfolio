@@ -13,9 +13,10 @@ const CodeScreen = () => {
   };
 
   return (
-    <div className="text-black border-double border-4 rounded-lg border-black h-[400px] sm:h-[600px] w-full sm:w-[700px]">
+    <div className="text-black border-double border-4 rounded-lg border-black h-[500px] sm:h-[600px] w-[300px] sm:w-[700px]">
+      {/* w-full sm:w-[700px] */}
       <div className="h-[45px] w-full sm:w-[700px] flex items-center p-3">
-        <div className="flex gap-2">
+        <div className="flex gap-2 mr-8 md:mr-0 lg:mr-0">
           <button className="h-4 w-4 rounded-full bg-red-500 cursor-pointer group relative">
             <div className="absolute inset-0 flex items-center justify-center h-full w-full">
               <Image
@@ -51,17 +52,17 @@ const CodeScreen = () => {
           </button>
         </div>
         {/* Searchbar here */}
-        <div className="flex justify-center items-center ml-36">
-          {/* <div className="border h-[30px]">Search</div> */}
+        <div className="flex justify-center items-center md:ml-36 lg:ml-36 ml-0">
+          {/* <div className="border h-[30px]">Search</div> ml-36*/}
           <input
             type="text"
             placeholder="Search"
-            className="p-2 bg-transparent border-white-400 hover:border-black border h-[30px] rounded-md"
+            className="p-2 w-32 md:w-60 lg:w-60 bg-transparent border-white-400 hover:border-black border h-[30px] rounded-md"
           />
         </div>
       </div>
       {/* <hr className="h-0.5 ml-3 mr-3 bg-gray-100 border-0 rounded dark:bg-gray-700 mb-1" /> */}
-      <div className="h-[40px] flex justify-start items-start cursor-pointer mr-2">
+      <div className="h-[40px] flex justify-start items-start cursor-pointer overflow-scroll mr-2">
         <button
           onClick={() => handleClick("/index.tsx")}
           className={`h-[40px] w-[240px] flex justify-start items-center ${

@@ -16,12 +16,7 @@ const BentoGrid = ({
   className?: string;
 }) => {
   return (
-    <div
-      className={cn(
-        "grid w-full auto-rows-[22rem] grid-cols-3 gap-4",
-        className
-      )}
-    >
+    <div className={cn("grid w-full  grid-cols-3 gap-4", className)}>
       {children}
     </div>
   );
@@ -73,7 +68,13 @@ const BentoCard = ({
         >
           {name}
         </h3>
-        <p className="max-w-lg text-neutral-400">{description}</p>
+        <p
+          className={`max-w-lg  ${
+            id === 3 ? "text-black" : "text-neutral-400"
+          } `}
+        >
+          {description}
+        </p>
       </div>
 
       <div
