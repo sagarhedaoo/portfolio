@@ -14,7 +14,8 @@ import TechStack from "./TechStack";
 import b5 from "../public/b5.svg";
 import { SquareFunction } from "lucide-react";
 import { View } from "lucide-react";
-import Globe from "./ui/globe";
+// import Globe from "./ui/Globe";
+import Globe from "./ui/Globe";
 
 const features = [
   {

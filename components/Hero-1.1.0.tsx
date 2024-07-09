@@ -6,6 +6,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import Link from "next/link";
 import CodeScreen from "./CodeScreen";
 import BoxReveal from "./magicui/box-reveal";
+import { LinkPreview } from "./ui/link-preview";
 
 const Herov1 = () => {
   const words = ["Hello 👋", "Namaste 🙏", "Bonjour 👋"];
@@ -59,8 +60,8 @@ const Herov1 = () => {
                     </BoxReveal>
                   </a>
 
-                  <Link
-                    href="/resume"
+                  <LinkPreview
+                    url="https://sagarhedaoo.com/resume"
                     className="hover:-translate-y-1 hover:scale-110 transition-all"
                   >
                     <BoxReveal boxColor={"#e97f41"} duration={0.5}>
@@ -70,7 +71,7 @@ const Herov1 = () => {
                         position="right"
                       />
                     </BoxReveal>
-                  </Link>
+                  </LinkPreview>
                 </div>
               </div>
               {/* <div>Header line</div> */}
