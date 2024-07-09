@@ -10,6 +10,7 @@ import { navItems } from "@/data";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { MultiStepLoader as Loader } from "@/components/ui/MultiStepLoader";
 import { useEffect, useState } from "react";
+import { BentoDemo } from "@/components/Bento";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <FloatingNav navItems={navItems} />
         {/* <Hero /> */}
         <Herov1 />
+        <BentoDemo />
         {/* <Grid /> */}
         <RecentProjects />
         <Experience />
