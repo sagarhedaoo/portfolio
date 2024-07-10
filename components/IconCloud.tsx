@@ -29,7 +29,7 @@ const slugs = [
   "mongodb",
   "tailwindcss",
   "stripe",
-  "sql",
+  "sqlalchemy",
 ];
 
 export function IconCloudDemo() {

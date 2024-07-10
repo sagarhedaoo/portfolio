@@ -12,12 +12,13 @@ import ActivityAPI from "../public/activity.webp";
 const Projects = () => {
   return (
     <div className="py-20 " id="about">
-      <div className="items-center justify-center flex">
-        <h1 className="text-4xl lg:text-4xl text-black-100 dark:text-white">
+      <div className="items-center relative justify-center flex">
+        <div className="text-4xl lg:text-4xl md:text-4xl  text-black-100 dark:text-white">
           A small selection of{" "}
           <span className="text-orange-400">Recent Projects</span>
-        </h1>
+        </div>
       </div>
+
       <div className="grid md:grid-cols-3 items-start justify-center gap-x-24 gap-y-24 md:-mt-30 mt-20">
         <CardContainer className="inter-var h-[300px] w-[400px]">
           <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
