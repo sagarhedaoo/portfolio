@@ -1,19 +1,11 @@
-import {
-  BellIcon,
-  CalendarIcon,
-  FileTextIcon,
-  GlobeIcon,
-  InputIcon,
-} from "@radix-ui/react-icons";
+import { GlobeIcon } from "@radix-ui/react-icons";
 import { GraduationCap } from "lucide-react";
 
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import Image from "next/image";
 import stevens from "../public/stevens.webp";
-import TechStack from "./TechStack";
 import { SquareFunction } from "lucide-react";
 import { View } from "lucide-react";
-// import Globe from "./ui/Globe";
 import Globe from "./ui/Globe";
 import { IconCloudDemo } from "./IconCloud";
 
