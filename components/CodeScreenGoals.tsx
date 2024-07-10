@@ -7,13 +7,14 @@ const CodeScreenGoals = () => {
         <span className="text-deepPurple">import </span>
         <span className="text-blue-600">React </span>
         <span className="text-purple1">from</span>
-        <span className="text-orange-500"> &apos;react&apos;;</span>
+        <span className="text-orange-500"> &apos;react&apos;</span>
+        <span className="dark:text-white text-black">;</span>
       </span>
       <br />
       <br />
       <span className="text-blue-600">
         const <span className="text-green-500">Goals</span>
-        <span className="text-yellow-500"> = </span>
+        <span className="dark:text-white text-black"> = </span>
         <span className="text-blue-600">()</span>
         <span className="text-yellow-500">{" => "}</span>
         <span className="text-yellow-500">{"{"}</span>
@@ -27,7 +28,8 @@ const CodeScreenGoals = () => {
       <span className="ml-12 text-black">
         <span className="text-gray-300">{"<"}</span>
         <span className="text-blue-600">div </span>
-        <span className="text-blue-500">className</span>=
+        <span className="text-blue-500">className</span>
+        <span className="dark:text-white text-black">=</span>
         <span className="text-orange-400">
           &ldquo;p-4 bg-gray-100 rounded shadow&ldquo;
         </span>
@@ -37,12 +39,13 @@ const CodeScreenGoals = () => {
       <span className="ml-16">
         <span className="text-gray-300">{"<"}</span>
         <span className="text-blue-600">h1 </span>
-        <span className="text-blue-500">className</span>=
+        <span className="text-blue-500">className</span>
+        <span className="dark:text-white text-black">=</span>
         <span className="text-orange-400">
           &ldquo;text-2xl font-bold&ldquo;
         </span>
         <span className="text-gray-300">{">"}</span>
-        Current Goals
+        <span className="dark:text-white text-black">Current Goals</span>
         <span className="text-gray-300">{"<"}</span>
         <span className="text-blue-600">/h1</span>
         <span className="text-gray-300">{">"}</span>
@@ -51,7 +54,8 @@ const CodeScreenGoals = () => {
       <span className="ml-16">
         <span className="text-gray-300">{"<"}</span>
         <span className="text-blue-600">ul </span>
-        <span className="text-blue-500">className</span>=
+        <span className="text-blue-500">className</span>
+        <span className="dark:text-white text-black">=</span>
         <span className="text-orange-400">&ldquo;list-disc pl-8&ldquo;</span>
         <span className="text-gray-300">{">"}</span>
       </span>
@@ -60,7 +64,10 @@ const CodeScreenGoals = () => {
         <span className="text-gray-300">{"<"}</span>
         <span className="text-blue-600">li</span>
         <span className="text-gray-300">{">"}</span>
-        Master React and modern JavaScript frameworks
+        <span className="dark:text-white text-black">
+          Master React and modern JavaScript frameworks
+        </span>
+
         <span className="text-gray-300">{"<"}</span>
         <span className="text-blue-600">/li</span>
         <span className="text-gray-300">{">"}</span>
@@ -70,7 +77,10 @@ const CodeScreenGoals = () => {
         <span className="text-gray-300">{"<"}</span>
         <span className="text-blue-600">li</span>
         <span className="text-gray-300">{">"}</span>
-        Build industry level UI components
+        <span className="dark:text-white text-black">
+          Build industry level UI components
+        </span>
+
         <span className="text-gray-300">{"<"}</span>
         <span className="text-blue-600">/li</span>
         <span className="text-gray-300">{">"}</span>
@@ -81,7 +91,10 @@ const CodeScreenGoals = () => {
         <span className="text-gray-300">{"<"}</span>
         <span className="text-blue-600">li</span>
         <span className="text-gray-300">{">"}</span>
-        Contribute to open source projects
+        <span className="dark:text-white text-black">
+          Contribute to open source projects
+        </span>
+
         <span className="text-gray-300">{"<"}</span>
         <span className="text-blue-600">/li</span>
         <span className="text-gray-300">{">"}</span>
@@ -92,7 +105,10 @@ const CodeScreenGoals = () => {
         <span className="text-gray-300">{"<"}</span>
         <span className="text-blue-600">li</span>
         <span className="text-gray-300">{">"}</span>
-        Master Frontend Components
+        <span className="dark:text-white text-black">
+          Master Frontend Components
+        </span>
+
         <span className="text-gray-300">{"<"}</span>
         <span className="text-blue-600">/li</span>
         <span className="text-gray-300">{">"}</span>
@@ -114,12 +130,14 @@ const CodeScreenGoals = () => {
       <br />
 
       <span className="ml-8 text-black">
-        <span className="text-deepPurple">{")"}</span>;
+        <span className="text-deepPurple">{")"}</span>
+        <span className="dark:text-white text-black">;</span>
       </span>
       <br />
 
       <span className="ml-4 text-black">
-        <span className="text-yellow-500">{"}"}</span>;
+        <span className="text-yellow-500">{"}"}</span>
+        <span className="dark:text-white text-black">;</span>
       </span>
       <br />
 
@@ -127,7 +145,8 @@ const CodeScreenGoals = () => {
 
       <span>
         <span className="text-deepPurple"> export default </span>
-        <span className="text-blue-600">Goals</span>;
+        <span className="text-blue-600">Goals</span>
+        <span className="dark:text-white text-black">;</span>
       </span>
     </div>
   );

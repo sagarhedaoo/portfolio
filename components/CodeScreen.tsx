@@ -66,8 +66,8 @@ const CodeScreen = () => {
           onClick={() => handleClick("/index.tsx")}
           className={`h-[40px] w-[240px] flex justify-start items-center  ${
             selected === "/index.tsx"
-              ? "bg-white-300  border-t-2 border-blue-600 "
-              : "hover:bg-white-400 dark:text-white dark:hover:text-black"
+              ? "bg-white-300 dark:bg-gray-600  border-t-2 border-blue-600 "
+              : "hover:bg-white-400 dark:hover:bg-gray-600 dark:text-white hover:border-t-2 hover:border-blue-600 dark:hover:text-black"
           }`}
         >
           <div className="flex gap-3">
@@ -86,8 +86,8 @@ const CodeScreen = () => {
           onClick={() => handleClick("/goals.tsx")}
           className={`h-[40px] w-[160px] flex justify-start items-center ${
             selected === "/goals.tsx"
-              ? "bg-white-300 border-t-2 border-blue-600"
-              : "hover:bg-white-400 dark:text-white dark:hover:text-black"
+              ? "bg-white-300 dark:bg-gray-600 border-t-2 border-blue-600"
+              : "hover:bg-white-400 dark:hover:bg-gray-600 dark:text-white hover:border-t-2 hover:border-blue-600 dark:hover:text-black"
           }`}
         >
           <div className="flex gap-3">
