@@ -1,13 +1,10 @@
 import React from "react";
-import TypingAnimation from "./magicui/typing-animation";
 import { FlipWords } from "./ui/flip-text";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
-import Link from "next/link";
 import CodeScreen from "./CodeScreen";
 import BoxReveal from "./magicui/box-reveal";
 import { LinkPreview } from "./ui/link-preview";
-import { Spotlight } from "./ui/Spotlight";
 import { WavyBackground } from "./ui/wavy-background";
 
 const Herov1 = () => {

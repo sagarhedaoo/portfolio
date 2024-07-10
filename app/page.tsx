@@ -1,15 +1,10 @@
 "use client";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
-import Grid from "@/components/Grid";
-import Hero from "@/components/Hero";
 import Herov1 from "@/components/Hero-1.1.0";
-import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { navItems } from "@/data";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { MultiStepLoader as Loader } from "@/components/ui/MultiStepLoader";
-import { useEffect, useState } from "react";
 import { BentoDemo } from "@/components/Bento";
 import Projects from "@/components/Projects";
 
