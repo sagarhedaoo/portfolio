@@ -43,6 +43,7 @@ const BentoCard = ({
 }) => {
   return (
     <div
+      id="bento"
       key={name}
       className={cn(
         "group relative col-span-3 flex flex-col justify-between overflow-hidden rounded-xl group-hover:-translate-y-10 transition-all",
