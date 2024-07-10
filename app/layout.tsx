@@ -26,7 +26,7 @@ export default function RootLayout({
         <GoogleAnalytics gaId="G-670NTESQHE" />
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >

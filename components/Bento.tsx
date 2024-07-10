@@ -15,6 +15,7 @@ import { SquareFunction } from "lucide-react";
 import { View } from "lucide-react";
 // import Globe from "./ui/Globe";
 import Globe from "./ui/Globe";
+import { IconCloudDemo } from "./IconCloud";
 
 const features = [
   {
@@ -24,7 +25,7 @@ const features = [
     description: "Upgrading everyday",
     href: "/stevens.jpg",
     cta: "Learn more",
-    background: <TechStack />,
+    background: <IconCloudDemo />,
     className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
   },
   {
@@ -64,17 +65,17 @@ const features = [
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
   },
-  {
-    id: 5,
-    Icon: BellIcon,
-    name: "To-Do",
-    description: "",
-    href: "/",
-    cta: "Learn more",
-    // background: <Globe className="" />,
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
-  },
+  // {
+  //   id: 5,
+  //   Icon: BellIcon,
+  //   name: "To-Do",
+  //   description: "",
+  //   href: "/",
+  //   cta: "Learn more",
+  //   // background: <Globe className="" />,
+  //   background: <img className="absolute -right-20 -top-20 opacity-60" />,
+  //   className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
+  // },
 ];
 
 export function BentoDemo() {
