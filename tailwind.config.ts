@@ -25,6 +25,17 @@ const config = {
       padding: "2rem",
       screens: {
         "2xl": "1400px",
+        sm: "640px",
+        // => @media (min-width: 640px) { ... }
+
+        md: "768px",
+        // => @media (min-width: 768px) { ... }
+
+        lg: "1024px",
+        // => @media (min-width: 1024px) { ... }
+
+        xl: "1280px",
+        // => @media (min-width: 1280px) { ... }
       },
     },
     extend: {
@@ -39,11 +50,20 @@ const config = {
           DEFAULT: "#FFF",
           100: "#BEC1DD",
           200: "#C1C2D3",
+          300: "#E7E5E4",
+          400: "#F5F5F4",
+          500: "#F5F5F4",
+          600: "#FAFAF9",
         },
+
+        // macosRedCross: "rgba(255,95,87,100%",
         blue: {
           "100": "#E4ECFF",
         },
+        blueImport: "rgba(155, 219, 252, 100%)",
+        deepPurple: "#9c27b0",
         purple: "#CBACF9",
+        purple1: "rgba(183,126,179, 100%)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -84,6 +104,14 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        fadeIn: {
+          "0%": { transform: "scale(0.9)" },
+          "100%": { transform: "scale(1)" },
+        },
+        fadeOut: {
+          "0%": { transform: "scale(1)" },
+          "100%": { transform: "scale(0.9)" },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -150,6 +178,8 @@ const config = {
         },
       },
       animation: {
+        fadeIn: "fadeIn 300ms ease-in-out",
+        fadeOut: "fadeOut 300ms ease-in-out",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         spotlight: "spotlight 2s ease .75s 1 forwards",
@@ -163,7 +193,13 @@ const config = {
           "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
       },
     },
+
+    fontFamily: {
+      sans: ["ui-sans-serif", "system-ui"],
+      sourceCodePro: ["Source Code Pro", "monospace"],
+    },
   },
+
   plugins: [
     require("tailwindcss-animate"),
     addVariablesForColors,

@@ -11,8 +11,8 @@ const Footer = () => {
         <img src="/footer-grid.svg" alt="grid" className="w-full h-full" />
       </div>
 
-      <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[40vw] text-black">
+      <div className="flex flex-col items-center gap-2 md:gap-0">
+        <h1 className="heading lg:max-w-[40vw] text-black dark:text-white">
           Hire <span className="text-orange-500">Me!</span>
         </h1>
         <a href="mailto:sagarhedaoo@gmail.com">
@@ -24,12 +24,12 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
+      <div className="flex mt-10 md:flex-row flex-col justify-between items-center gap-3">
+        <p className="md:text-base text-sm md:font-normal text-black dark:text-white font-light">
           Copyright © 2024 Sagar Hedaoo
         </p>
 
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex relative items-center md:gap-3 gap-6">
           {socialMedia.map((info) => (
             <a
               key={info.id}

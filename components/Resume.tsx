@@ -1,7 +1,5 @@
 import React from "react";
 import "tailwindcss/tailwind.css";
-import { FloatingNav } from "./ui/FloatingNav";
-import { navItems } from "@/data";
 import Link from "next/link";
 import { BackgroundGradient } from "./ui/CardBackground";
 
