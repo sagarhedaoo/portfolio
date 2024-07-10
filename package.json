@@ -1,6 +1,6 @@
 {
   "name": "portfolio-next",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -34,6 +34,7 @@
     "react-day-picker": "8.10.1",
     "react-dom": "18",
     "react-element-to-jsx-string": "15.0.0",
+    "react-icon-cloud": "4.1.4",
     "react-icons": "5.2.1",
     "react-lottie": "1.2.4",
     "react-spring": "9.7.3",

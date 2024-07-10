@@ -9,7 +9,6 @@ import { WavyBackground } from "./ui/wavy-background";
 
 const Herov1 = () => {
   const words = ["Hello 👋", "Namaste 🙏", "Bonjour 👋"];
-  // const words = ["Hello", "Namaste", "Bonjour"];
   return (
     <div className="pb-20 mt-36 ">
       <WavyBackground
@@ -29,9 +28,6 @@ const Herov1 = () => {
                 <div className="text-4xl font-normal text-neutral-600 dark:text-neutral-400">
                   <FlipWords words={words} className="mb-6" />
                   <br />
-                  {/* <span className="text-6xl">
-                  I&apos;m <span className="text-orange-400">Sagar Hedaoo</span>
-                </span> */}
 
                   <BoxReveal boxColor={"#e97f41"} duration={0.5}>
                     <p className="text-6xl mb-2 dark:text-white text-black">
@@ -41,9 +37,6 @@ const Herov1 = () => {
                   </BoxReveal>
 
                   <br />
-                  {/* <span className="text-2xl">
-                  Frontend Developer based out of New Jersey.
-                </span> */}
 
                   <BoxReveal boxColor={"#e97f41"} duration={0.5}>
                     <h2 className="text-2xl mb-4 md:mb-0 lg:mb-0 dark:text-white">
