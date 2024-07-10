@@ -82,6 +82,9 @@ const RecentProjects = () => {
           </div>
         ))}
       </div>
+
+      {/* Here */}
+
       <div className="mt-10 md:-mt-5 -mb-20 xl:mt-20">
         <h3 className="font-bold text-black-100 lg:text-xl md:text-sm sm:text-xs flex items-center justify-center">
           More Projects are on my{" "}
@@ -95,6 +98,8 @@ const RecentProjects = () => {
           </a>
         </h3>
       </div>
+
+      {/* Here */}
     </div>
   );
 };

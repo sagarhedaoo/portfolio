@@ -43,7 +43,11 @@ const features = [
     id: 3,
     Icon: GlobeIcon,
     name: "",
-    description: "Open to relocation across United States",
+    description: (
+      <span className="dark:items-center dark:justify-center dark:flex ">
+        Open to relocation across United States
+      </span>
+    ),
     href: "/",
     cta: "Learn more",
     // background: <img className="absolute -right-20 -top-20 opacity-60" />,

@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import CodeScreenIndex from "./CodeScreenIndex";
 import CodeScreenGoals from "./CodeScreenGoals";
 import { X } from "lucide-react";
-import { Search } from "lucide-react";
 
 const CodeScreen = () => {
   const [selected, setSelected] = useState("/index.tsx");
@@ -13,7 +12,7 @@ const CodeScreen = () => {
   };
 
   return (
-    <div className="text-black border-double border-4 rounded-lg border-black h-[500px] sm:h-[600px] w-[300px] sm:w-[700px]">
+    <div className="text-black border-double border-4 rounded-lg border-black dark:border-white h-[500px] sm:h-[600px] w-[300px] sm:w-[700px]">
       {/* w-full sm:w-[700px] */}
       <div className="h-[45px] w-full sm:w-[700px] flex items-center p-3">
         <div className="flex gap-2 mr-8 md:mr-0 lg:mr-0">
@@ -65,10 +64,10 @@ const CodeScreen = () => {
       <div className="h-[40px] flex justify-start items-start cursor-pointer overflow-scroll mr-2">
         <button
           onClick={() => handleClick("/index.tsx")}
-          className={`h-[40px] w-[240px] flex justify-start items-center ${
+          className={`h-[40px] w-[240px] flex justify-start items-center  ${
             selected === "/index.tsx"
-              ? "bg-white-300 border-t-2 border-blue-600 "
-              : "hover:bg-white-400 "
+              ? "bg-white-300  border-t-2 border-blue-600 "
+              : "hover:bg-white-400 dark:text-white dark:hover:text-black"
           }`}
         >
           <div className="flex gap-3">
@@ -88,7 +87,7 @@ const CodeScreen = () => {
           className={`h-[40px] w-[160px] flex justify-start items-center ${
             selected === "/goals.tsx"
               ? "bg-white-300 border-t-2 border-blue-600"
-              : "hover:bg-white-400 "
+              : "hover:bg-white-400 dark:text-white dark:hover:text-black"
           }`}
         >
           <div className="flex gap-3">

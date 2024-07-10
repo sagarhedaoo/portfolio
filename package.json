@@ -38,6 +38,7 @@
     "react-lottie": "1.2.4",
     "react-spring": "9.7.3",
     "react-transition-group": "4.4.5",
+    "simplex-noise": "4.0.1",
     "tailwind-merge": "2.3.0",
     "tailwindcss-animate": "1.0.7",
     "three": "0.164.1",

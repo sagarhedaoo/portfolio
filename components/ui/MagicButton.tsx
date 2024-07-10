@@ -16,7 +16,7 @@ const MagicButton = ({
 }) => {
   return (
     <button
-      className="p-[2px] relative md:w-30 md:mt-10 overflow-hidden h-12 rounded-lg inline-flex"
+      className="p-[2px] dark:border dark:border-white relative md:w-30 md:mt-10 overflow-hidden h-12 rounded-lg inline-flex"
       onClick={handleClick}
     >
       <div className="absolute inset-0 rounded-lg bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)" />
