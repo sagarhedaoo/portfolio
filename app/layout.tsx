@@ -24,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <GoogleAnalytics gaId="G-670NTESQHE" />
+
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

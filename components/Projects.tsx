@@ -11,7 +11,7 @@ import ActivityAPI from "../public/activity.webp";
 
 const Projects = () => {
   return (
-    <div className="py-20 " id="about">
+    <div className="py-20 " id="projects">
       <div className="items-center relative justify-center flex">
         <div className="text-4xl lg:text-4xl md:text-4xl  text-black-100 dark:text-white">
           A small selection of{" "}

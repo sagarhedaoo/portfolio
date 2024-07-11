@@ -6,11 +6,12 @@ import CodeScreen from "./CodeScreen";
 import BoxReveal from "./magicui/box-reveal";
 import { LinkPreview } from "./ui/link-preview";
 import { WavyBackground } from "./ui/wavy-background";
+import { ModeToggle } from "./ThemeToggleButton";
 
 const Herov1 = () => {
   const words = ["Hello 👋", "Namaste 🙏", "Bonjour 👋"];
   return (
-    <div className="pb-20 mt-36 ">
+    <div className="pb-20 mt-36 " id="about">
       <WavyBackground
         speed="fast"
         waveOpacity={0.5}
@@ -74,6 +75,10 @@ const Herov1 = () => {
                       </BoxReveal>
                     </LinkPreview>
                   </div>
+                  {/* <ThemeToggleSwitch /> */}
+                  {/* <div className="flex justify-between items-center mt-4">
+                    <ModeToggle />
+                  </div> */}
                 </div>
                 {/* <div>Header line</div> */}
               </div>
