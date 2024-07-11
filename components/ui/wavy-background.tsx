@@ -37,6 +37,7 @@ export const WavyBackground = ({
     canvas: any;
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const { theme } = useTheme();
+  const { resolvedTheme } = useTheme();
 
   const getSpeed = () => {
     switch (speed) {
@@ -88,7 +89,8 @@ export const WavyBackground = ({
 
   let animationId: number;
   const render = () => {
-    ctx.fillStyle = backgroundFill || (theme === "dark" ? "black" : "white");
+    ctx.fillStyle =
+      backgroundFill || (resolvedTheme === "dark" ? "black" : "white");
     ctx.globalAlpha = waveOpacity || 0.5;
     ctx.fillRect(0, 0, w, h);
     drawWave(5);
@@ -100,7 +102,7 @@ export const WavyBackground = ({
     return () => {
       cancelAnimationFrame(animationId);
     };
-  }, [theme]);
+  }, [theme, resolvedTheme]);
 
   const [isSafari, setIsSafari] = useState(false);
   useEffect(() => {
