@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FlipWords } from "./ui/flip-text";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
@@ -6,10 +6,21 @@ import CodeScreen from "./CodeScreen";
 import BoxReveal from "./magicui/box-reveal";
 import { LinkPreview } from "./ui/link-preview";
 import { WavyBackground } from "./ui/wavy-background";
-import { ModeToggle } from "./ThemeToggleButton";
+import { useMediaQuery } from "react-responsive";
 
 const Herov1 = () => {
   const words = ["Hello 👋", "Namaste 🙏", "Bonjour 👋"];
+  const isSmallDevice = useMediaQuery({ maxWidth: 640 });
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) {
+    return null;
+  }
+
   return (
     <div className="pb-20 mt-36 " id="about">
       <WavyBackground
@@ -83,12 +94,14 @@ const Herov1 = () => {
                 {/* <div>Header line</div> */}
               </div>
               {/* Right section */}
-              <div className="mx-auto  flex justify-center items-center w-[350px] mt-8 sm:mt-0">
-                {/* <div className="w-[full] mx-auto mt-8 sm:mt-0"> */}
-                <div>
-                  <CodeScreen />
+              {!isSmallDevice && (
+                <div className="mx-auto  flex justify-center items-center w-[350px] mt-8 sm:mt-0">
+                  {/* <div className="w-[full] mx-auto mt-8 sm:mt-0"> */}
+                  <div>
+                    <CodeScreen />
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>

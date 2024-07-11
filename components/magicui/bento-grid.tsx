@@ -1,7 +1,7 @@
 import { ReactNode, useState } from "react";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
-import { cn } from "@/lib/utils";
+import { cn } from "@/utils/cn";
 import { Button } from "../ui/MovingBorders";
 import MagicButton from "../ui/MagicButton";
 import animationData from "@/data/confetti.json";

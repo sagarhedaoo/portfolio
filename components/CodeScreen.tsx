@@ -12,7 +12,7 @@ const CodeScreen = () => {
   };
 
   return (
-    <div className="text-black border-double border-4 rounded-lg border-black dark:border-white h-[500px] sm:h-[600px] w-[300px] sm:w-[700px]">
+    <div className="text-black border-double border-4 rounded-lg border-black dark:border-white h-[500px] sm:h-[600px] sm:w-[700px]">
       {/* w-full sm:w-[700px] */}
       <div className="h-[45px] w-full sm:w-[700px] flex items-center p-3">
         <div className="flex gap-2 mr-8 md:mr-0 lg:mr-0">
