@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@gsap/react": "2.1.1",
     "@headlessui/react": "2.1.2",
     "@next/third-parties": "14.2.3",
     "@nextui-org/react": "2.4.2",
@@ -26,6 +27,7 @@
     "cobe": "0.6.3",
     "date-fns": "3.6.0",
     "framer-motion": "11.2.4",
+    "gsap": "3.12.5",
     "highlight.js": "11.9.0",
     "lucide-react": "0.379.0",
     "mini-svg-data-uri": "1.4.4",

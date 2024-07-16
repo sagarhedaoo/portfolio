@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Menu } from "../magicui/navbar";
 
 import { cn } from "@/utils/cn";
@@ -10,6 +10,8 @@ import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { useMediaQuery } from "react-responsive";
 import { Briefcase, FolderGit2, User } from "lucide-react";
 import { LinkPreview } from "./link-preview";
+import TransitionLink from "@/utils/TransitionLink";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 export function NavbarDemo() {
   return (
@@ -24,21 +26,33 @@ function Navbar({ className }: { className?: string }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const isSmallDevice = useMediaQuery({ maxWidth: 640 });
   const [isMounted, setIsMounted] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const { scrollY } = useScroll();
+  const previousScrollY = useRef(scrollY.get());
 
   useEffect(() => {
     setIsMounted(true);
-  }, []);
+  }, [scrollY]);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = previousScrollY.current;
+    if (latest > previous && latest > 60) {
+      setHidden(true);
+    } else {
+      setHidden(false);
+    }
+    previousScrollY.current = latest;
+  });
 
   if (!isMounted) {
     return null;
   }
 
   return (
-    <div
+    <motion.nav
+      variants={{ visible: { y: 0 }, hidden: { y: "-100%" } }}
+      animate={hidden ? "hidden" : "visible"}
+      transition={{ duration: 0.35, ease: "easeInOut" }}
       className={cn(
         "fixed top-0 inset-x-0 md:max-w-6xl  mx-auto z-50",
         className
@@ -61,37 +75,31 @@ function Navbar({ className }: { className?: string }) {
                   <FaLinkedin className=" h-8 w-8 " />
                 </div>
               </Link>
-              <Link href="#about">
+              <TransitionLink href="#about">
                 <div className=" hover:bg-black hover:text-white rounded-lg dark:hover:bg-white dark:hover:text-black">
                   <User className="h-8 w-8" />
                 </div>
-              </Link>
-              <Link href="#projects">
+              </TransitionLink>
+              <TransitionLink href="#projects">
                 <div className=" hover:bg-black hover:text-white rounded-lg dark:hover:bg-white dark:hover:text-black">
                   <FolderGit2 className="h-8 w-8" />
                 </div>
-              </Link>
-              <Link href="#experience">
+              </TransitionLink>
+              <TransitionLink href="#experience">
                 <div className=" hover:bg-black hover:text-white rounded-lg dark:hover:bg-white dark:hover:text-black">
                   <Briefcase className="h-8 w-8" />
                 </div>
-              </Link>
+              </TransitionLink>
 
               <ModeToggle />
             </div>
           ) : (
             <div className="flex justify-between items-center w-full">
               <div className="flex gap-2 md:gap-5 lg:gap-5">
-                <LinkPreview url="https://sagarhedaoo.com/#bento">
-                  About
-                </LinkPreview>
-                <LinkPreview url="https://sagarhedaoo.com/#projects">
-                  Projects
-                </LinkPreview>
-                <LinkPreview url="https://sagarhedaoo.com/#experience">
-                  Experience
-                </LinkPreview>
-                <LinkPreview url="https://sagarhedaoo.com/resume">
+                <TransitionLink href="#bento">About</TransitionLink>
+                <TransitionLink href="#projects">Projects</TransitionLink>
+                <TransitionLink href="#experience">Experience</TransitionLink>
+                <LinkPreview url="https://www.sagarhedaoo.com/resume">
                   Resume
                 </LinkPreview>
               </div>
@@ -127,6 +135,6 @@ function Navbar({ className }: { className?: string }) {
           )}
         </div>
       </Menu>
-    </div>
+    </motion.nav>
   );
 }
