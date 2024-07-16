@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+"use Client";
+import React, { useEffect, useRef, useState } from "react";
 import { FlipWords } from "./ui/flip-text";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
@@ -7,6 +8,8 @@ import BoxReveal from "./magicui/box-reveal";
 import { LinkPreview } from "./ui/link-preview";
 import { WavyBackground } from "./ui/wavy-background";
 import { useMediaQuery } from "react-responsive";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Herov1 = () => {
   const words = ["Hello 👋", "Namaste 🙏", "Bonjour 👋"];
@@ -36,7 +39,7 @@ const Herov1 = () => {
 
             <div className="flex flex-col sm:flex-row justify-center items-center h-auto w-full sm:gap-5">
               {/* Left Section */}
-              <div className="text-black w-full sm:w-1/2 flex justify-center items-center flex-col">
+              <div className=" text-black w-full sm:w-1/2 flex justify-center items-center flex-col">
                 <div className="text-4xl font-normal text-neutral-600 dark:text-neutral-400">
                   <FlipWords words={words} className="mb-6" />
                   <br />
@@ -95,7 +98,7 @@ const Herov1 = () => {
               </div>
               {/* Right section */}
               {!isSmallDevice && (
-                <div className="mx-auto  flex justify-center items-center w-[350px] mt-8 sm:mt-0">
+                <div className="mx-auto flex justify-center items-center w-[350px] mt-8 sm:mt-0">
                   {/* <div className="w-[full] mx-auto mt-8 sm:mt-0"> */}
                   <div>
                     <CodeScreen />

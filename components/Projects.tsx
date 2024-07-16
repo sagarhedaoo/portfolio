@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +8,8 @@ import ExploreHub from "../public/explorehub.webp";
 import ECommerce from "../public/ecommerce.webp";
 import Airbnb from "../public/airbnb.webp";
 import ActivityAPI from "../public/activity.webp";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
 
 const Projects = () => {
   return (

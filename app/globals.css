@@ -92,3 +92,16 @@
 .custom-mb {
   margin-bottom: 2.5rem !important;
 }
+
+body {
+  transition-property: opacity, background, transform, filter;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+
+.page-transition {
+  opacity: 0;
+  background: white;
+  transform: translateY();
+  filter: blur(12px);
+}
