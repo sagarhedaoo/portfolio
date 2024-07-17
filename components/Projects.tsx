@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,10 +8,30 @@ import ExploreHub from "../public/explorehub.webp";
 import ECommerce from "../public/ecommerce.webp";
 import Airbnb from "../public/airbnb.webp";
 import ActivityAPI from "../public/activity.webp";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import useIsMobile from "@/utils/MobileView";
 
 const Projects = () => {
+  const isMobile = useIsMobile();
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  const variantsFirst = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0 },
+  };
+
+  const variantsSecond = {
+    hidden: { opacity: 0, x: 100 },
+    visible: { opacity: 1, x: 0 },
+  };
+
+  const AnimatedDiv = isMobile ? "div" : motion.div;
+
   return (
     <div className="py-20 " id="projects">
       <div className="items-center relative justify-center flex">
@@ -21,7 +41,14 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="grid md:grid-cols-3 items-start justify-center gap-x-24 gap-y-24 md:-mt-30 mt-20">
+      <AnimatedDiv
+        variants={variantsFirst}
+        ref={ref}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        transition={{ type: "spring", stiffness: 220 }}
+        className="grid md:grid-cols-3 items-start justify-center gap-x-24 gap-y-24 md:-mt-30 mt-20"
+      >
         <CardContainer className="inter-var h-[300px] w-[400px]">
           <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
             <CardItem
@@ -316,8 +343,15 @@ const Projects = () => {
             </div>
           </CardBody>
         </CardContainer>
-      </div>
-      <div className="grid md:grid-cols-2 items-start justify-center  gap-y-24 md:mt-24 mt-24">
+      </AnimatedDiv>
+      <AnimatedDiv
+        variants={variantsSecond}
+        ref={ref}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        transition={{ type: "spring", stiffness: 220 }}
+        className="grid md:grid-cols-2 items-start justify-center  gap-y-24 md:mt-24 mt-24"
+      >
         <CardContainer className="inter-var h-[300px] w-[400px]">
           <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
             <CardItem
@@ -501,7 +535,7 @@ const Projects = () => {
             </div>
           </CardBody>
         </CardContainer>
-      </div>
+      </AnimatedDiv>
     </div>
   );
 };

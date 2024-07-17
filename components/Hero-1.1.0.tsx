@@ -10,19 +10,23 @@ import { WavyBackground } from "./ui/wavy-background";
 import { useMediaQuery } from "react-responsive";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import {
+  motion,
+  useScroll,
+  useMotionValueEvent,
+  easeIn,
+  easeInOut,
+} from "framer-motion";
 
 const Herov1 = () => {
   const words = ["Hello 👋", "Namaste 🙏", "Bonjour 👋"];
   const isSmallDevice = useMediaQuery({ maxWidth: 640 });
   const [isMounted, setIsMounted] = useState(false);
 
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  if (!isMounted) {
-    return null;
-  }
+  const variants = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0 },
+  };
 
   return (
     <div className="pb-20 mt-36 " id="about">
@@ -97,14 +101,23 @@ const Herov1 = () => {
                 {/* <div>Header line</div> */}
               </div>
               {/* Right section */}
-              {!isSmallDevice && (
-                <div className="mx-auto flex justify-center items-center w-[350px] mt-8 sm:mt-0">
-                  {/* <div className="w-[full] mx-auto mt-8 sm:mt-0"> */}
-                  <div>
-                    <CodeScreen />
-                  </div>
+              {/* {!isSmallDevice && ( */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 0.3,
+                  delay: 0.2,
+                  ease: easeInOut,
+                }}
+                className="mx-auto flex justify-center items-center w-[350px] mt-8 sm:mt-0"
+              >
+                {/* <div className="w-[full] mx-auto mt-8 sm:mt-0"> */}
+                <div>
+                  <CodeScreen />
                 </div>
-              )}
+              </motion.div>
+              {/* )} */}
             </div>
           </div>
         </div>

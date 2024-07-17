@@ -1,4 +1,4 @@
-import { ReactNode, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 import { cn } from "@/utils/cn";
@@ -7,6 +7,7 @@ import MagicButton from "../ui/MagicButton";
 import animationData from "@/data/confetti.json";
 import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "react-lottie";
+import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 
 const BentoGrid = ({
   children,
@@ -41,8 +42,27 @@ const BentoCard = ({
   href: string;
   cta: string;
 }) => {
+  const { scrollY } = useScroll();
+  const [isActive, setIsActive] = useState(false);
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    console.log(latest);
+  });
+
+  useEffect(() => {
+    return scrollY.onChange((latest) => {
+      if (latest >= 400 && !isActive) {
+        setIsActive(true);
+      }
+    });
+  }, [scrollY, isActive]);
+
+  const variants = {
+    hidden: { opacity: 0, x: -100 },
+    visible: { opacity: 1, x: 0 },
+  };
   return (
-    <div
+    <motion.div
       id="bento"
       key={name}
       className={cn(
@@ -91,7 +111,7 @@ const BentoCard = ({
       </Button> */}
       </div>
       <div className="pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03] group-hover:dark:bg-neutral-800/10" />
-    </div>
+    </motion.div>
   );
 };
 
