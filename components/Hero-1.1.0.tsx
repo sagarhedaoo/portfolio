@@ -60,7 +60,7 @@ const Herov1 = () => {
                   <BoxReveal boxColor={"#e97f41"} duration={0.5}>
                     <h2 className="text-2xl mb-4 md:mb-0 lg:mb-0 dark:text-white">
                       <span className="text-orange-400">
-                        Frontend Developer{" "}
+                        Software Developer{" "}
                       </span>
                       based out of New Jersey.
                     </h2>
