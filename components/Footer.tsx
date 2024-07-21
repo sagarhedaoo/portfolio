@@ -29,7 +29,7 @@ const Footer = () => {
           Copyright © 2024 Sagar Hedaoo
         </p>
 
-        <div className="flex relative items-center md:gap-3 gap-6">
+        {/* <div className="flex relative items-center md:gap-3 gap-6">
           {socialMedia.map((info) => (
             <a
               key={info.id}
@@ -42,7 +42,7 @@ const Footer = () => {
               <Image src={info.img} alt={info.link} width={20} height={20} />
             </a>
           ))}
-        </div>
+        </div> */}
       </div>
     </footer>
   );
