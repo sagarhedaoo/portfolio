@@ -1139,6 +1139,21 @@ const Resume = () => {
                                   -
                                 </span>
                                 <span className="print:!text-base">
+                                  Oracle Certified Professional - Oracle Cloud
+                                  Infrastructure 2024 Generative AI Certified
+                                  Professional
+                                </span>
+                              </span>
+                            </li>
+                            <li>
+                              <span className="inline-flex items-baseline gap-2">
+                                <span className="text-xs font-medium leading-[16px] text-gray-400 d:text-gray-500 print:!text-sm">
+                                  2024
+                                </span>
+                                <span className="select-none text-sm text-gray-300 print:!text-gray-500">
+                                  -
+                                </span>
+                                <span className="print:!text-base">
                                   Walmart USA - Advanced Software Engineering
                                   Job Simulation
                                 </span>
