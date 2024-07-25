@@ -19,7 +19,7 @@ const features = [
     href: "/stevens.jpg",
     cta: "Learn more",
     background: <IconCloudDemo />,
-    className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3",
+    className: "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3 ",
   },
   {
     id: 2,
@@ -55,8 +55,8 @@ const features = [
     description: "Available Immediately",
     href: "/",
     cta: "Click here",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
-    className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
+    background: <img className="absolute -right-20 -top-20 opacity-60 " />,
+    className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2 ",
   },
   {
     id: 5,
@@ -75,7 +75,7 @@ const features = [
 
 export function BentoDemo() {
   return (
-    <BentoGrid className="lg:grid-rows-3">
+    <BentoGrid className="lg:grid-rows-3 ">
       {features.map((feature) => (
         <BentoCard key={feature.name} {...feature} />
       ))}

@@ -12,7 +12,7 @@ export function CarouselDemo() {
         <CarouselItem>
           <div className="">
             <Card>
-              <CardContent className="flex bg-white flex-col justify-center items-center border-4 border-oracleGold rounded-lg ">
+              <CardContent className="flex bg-white dark:bg-black flex-col justify-center items-center border-4 border-oracleGold rounded-lg ">
                 <Image
                   src="/oci-badge.png"
                   width={280}
@@ -28,7 +28,7 @@ export function CarouselDemo() {
         <CarouselItem>
           <div className="">
             <Card>
-              <CardContent className="flex bg-white flex-col items-center justify-center border-4 border-attBlue rounded-lg">
+              <CardContent className="flex bg-white dark:bg-black flex-col items-center justify-center border-4 border-attBlue rounded-lg">
                 <Image
                   src="/at&t-badge.png"
                   width={280}
@@ -44,7 +44,7 @@ export function CarouselDemo() {
         <CarouselItem>
           <div className="">
             <Card>
-              <CardContent className="flex bg-white flex-col items-center justify-center border-4 border-mtaBlue rounded-lg">
+              <CardContent className="flex bg-white dark:bg-black flex-col items-center justify-center border-4 border-mtaBlue rounded-lg">
                 <Image
                   src="/mta-badge.png"
                   width={280}
