@@ -60,6 +60,9 @@ const config = {
         blue: {
           "100": "#E4ECFF",
         },
+        attBlue: "rgba(68,152,200, 100%)",
+        oracleGold: "rgba(202,166,111, 100%)",
+        mtaBlue: "rgba(52,119,210, 100%)",
         blueImport: "rgba(155, 219, 252, 100%)",
         deepPurple: "#9c27b0",
         purple: "#CBACF9",

@@ -1,5 +1,5 @@
 import { GlobeIcon } from "@radix-ui/react-icons";
-import { GraduationCap } from "lucide-react";
+import { BellIcon, GraduationCap } from "lucide-react";
 
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import Image from "next/image";
@@ -8,6 +8,7 @@ import { SquareFunction } from "lucide-react";
 import { View } from "lucide-react";
 import Globe from "./ui/Globe";
 import { IconCloudDemo } from "./IconCloud";
+import { CarouselDemo } from "./ui/CarouselDemo";
 
 const features = [
   {
@@ -57,17 +58,19 @@ const features = [
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2",
   },
-  // {
-  //   id: 5,
-  //   Icon: BellIcon,
-  //   name: "To-Do",
-  //   description: "",
-  //   href: "/",
-  //   cta: "Learn more",
-  //   // background: <Globe className="" />,
-  //   background: <img className="absolute -right-20 -top-20 opacity-60" />,
-  //   className: "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4",
-  // },
+  {
+    id: 5,
+    Icon: View,
+    name: "",
+    description: "",
+    href: "/",
+    cta: "",
+    // background: <Globe className="" />,
+    // background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: <CarouselDemo />,
+    className:
+      "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4 h-[350px] md:h-full lg:h-full",
+  },
 ];
 
 export function BentoDemo() {
