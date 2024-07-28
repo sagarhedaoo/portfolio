@@ -169,8 +169,11 @@ const Resume = () => {
                         diverse, beginning with a Bachelor of Engineering in
                         India and advancing through a Master&apos;s at Stevens
                         Institute of Technology, where I earned a scholarship
-                        for my academic excellence. Currently, I am open to
-                        roles and contributing to Open source projects.
+                        for my academic excellence. Recently, I got certified by
+                        Oracle as{" "}
+                        <strong>2024 Generative AI Professional</strong>.
+                        Currently, I am open to roles and contributing to Open
+                        source projects.
                       </p>
                     </div>
                   </section>

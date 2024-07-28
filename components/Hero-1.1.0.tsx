@@ -62,7 +62,7 @@ const Herov1 = () => {
                       <span className="text-orange-400">
                         Software Developer{" "}
                       </span>
-                      based out of New Jersey.
+                      based in New York.
                     </h2>
                   </BoxReveal>
 
