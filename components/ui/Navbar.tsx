@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import { Menu } from "../magicui/navbar";
-
 import { cn } from "@/utils/cn";
 import Link from "next/link";
 import { ModeToggle } from "../ThemeToggleButton";
