@@ -1,5 +1,9 @@
 import { GlobeIcon } from "@radix-ui/react-icons";
+<<<<<<< HEAD
 import { GraduationCap } from "lucide-react";
+=======
+import { BellIcon, GraduationCap } from "lucide-react";
+>>>>>>> dac7dcec638b2490c7cefdb3987ed74f5e9aa5d7
 import { BentoCard, BentoGrid } from "@/components/magicui/bento-grid";
 import Image from "next/image";
 import stevens from "../public/stevens.webp";
