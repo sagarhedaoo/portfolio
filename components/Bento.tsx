@@ -64,8 +64,6 @@ const features = [
     description: "",
     href: "/",
     cta: "",
-    // background: <Globe className="" />,
-    // background: <img className="absolute -right-20 -top-20 opacity-60" />,
     background: <CarouselDemo />,
     className:
       "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4 h-[350px] md:h-full lg:h-full",
