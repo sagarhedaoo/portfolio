@@ -7,7 +7,7 @@ import { ModeToggle } from "../ThemeToggleButton";
 import { FaLinkedin } from "react-icons/fa6";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { useMediaQuery } from "react-responsive";
-import { Briefcase, FolderGit2, User } from "lucide-react";
+import { Briefcase, FolderGit2, NotebookText, User } from "lucide-react";
 import { LinkPreview } from "./link-preview";
 import TransitionLink from "@/utils/TransitionLink";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
@@ -77,6 +77,11 @@ function Navbar({ className }: { className?: string }) {
               <TransitionLink href="#about">
                 <div className=" hover:bg-black hover:text-white rounded-lg dark:hover:bg-white dark:hover:text-black">
                   <User className="h-8 w-8" />
+                </div>
+              </TransitionLink>
+              <TransitionLink href="#certificates">
+                <div className=" hover:bg-black hover:text-white rounded-lg dark:hover:bg-white dark:hover:text-black">
+                  <NotebookText className="h-8 w-8" />
                 </div>
               </TransitionLink>
               <TransitionLink href="#projects">

@@ -1,4 +1,4 @@
-import OCI_Cert from "../public/OCI_Certificate.webp";
+import OCI_Cert from "../public/OCI_Cert.webp";
 import JP_Cert from "../public/JPMorgan_Cert.webp";
 import Walmart_Cert from "../public/Walmart_Cert.webp";
 import MTA_Cert from "../public/MTA_Cert.webp";
