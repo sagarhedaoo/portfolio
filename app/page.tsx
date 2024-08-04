@@ -6,6 +6,7 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { BentoDemo } from "@/components/Bento";
 import Projects from "@/components/Projects";
 import { NavbarDemo } from "@/components/ui/Navbar";
+import Certifications from "@/components/Certifications";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <NavbarDemo />
         <Herov1 />
         <BentoDemo />
+        <Certifications />
         <Projects />
         <Experience />
         <Footer />
