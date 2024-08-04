@@ -7,7 +7,7 @@ import { ModeToggle } from "../ThemeToggleButton";
 import { FaLinkedin } from "react-icons/fa6";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { useMediaQuery } from "react-responsive";
-import { Briefcase, FolderGit2, User } from "lucide-react";
+import { Briefcase, FolderGit2, NotebookText, User } from "lucide-react";
 import { LinkPreview } from "./link-preview";
 import TransitionLink from "@/utils/TransitionLink";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
@@ -79,6 +79,11 @@ function Navbar({ className }: { className?: string }) {
                   <User className="h-8 w-8" />
                 </div>
               </TransitionLink>
+              <TransitionLink href="#certificates">
+                <div className=" hover:bg-black hover:text-white rounded-lg dark:hover:bg-white dark:hover:text-black">
+                  <NotebookText className="h-8 w-8" />
+                </div>
+              </TransitionLink>
               <TransitionLink href="#projects">
                 <div className=" hover:bg-black hover:text-white rounded-lg dark:hover:bg-white dark:hover:text-black">
                   <FolderGit2 className="h-8 w-8" />
@@ -96,6 +101,9 @@ function Navbar({ className }: { className?: string }) {
             <div className="flex justify-between items-center w-full">
               <div className="flex gap-2 md:gap-5 lg:gap-5">
                 <TransitionLink href="#bento">About</TransitionLink>
+                <TransitionLink href="#certificates">
+                  Certificates
+                </TransitionLink>
                 <TransitionLink href="#projects">Projects</TransitionLink>
                 <TransitionLink href="#experience">Experience</TransitionLink>
                 <LinkPreview url="https://www.sagarhedaoo.com/resume">
