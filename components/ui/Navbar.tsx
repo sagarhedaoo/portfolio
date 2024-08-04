@@ -96,6 +96,9 @@ function Navbar({ className }: { className?: string }) {
             <div className="flex justify-between items-center w-full">
               <div className="flex gap-2 md:gap-5 lg:gap-5">
                 <TransitionLink href="#bento">About</TransitionLink>
+                <TransitionLink href="#certificates">
+                  Certificates
+                </TransitionLink>
                 <TransitionLink href="#projects">Projects</TransitionLink>
                 <TransitionLink href="#experience">Experience</TransitionLink>
                 <LinkPreview url="https://www.sagarhedaoo.com/resume">
