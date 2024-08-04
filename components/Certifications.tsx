@@ -62,14 +62,14 @@ const Certifications: React.FC = () => {
           Some <span className="text-orange-400">Certificates</span>
         </div>
       </div>
-      <div className="slider-container flex flex-row items-center mt-6 justify-center">
+      <div className="slider-container flex md:flex-row flex-col items-center mt-6 mb-4 justify-center">
         <button
           onClick={() => swipeToImage(-1)}
-          className=" h-[200px] hover:bg-gray-200 rounded-lg user-select-none py-2 px-3 font-inherit text-inherit text-black mr-4"
+          className=" md:h-[200px] hidden md:block hover:bg-gray-200 rounded-lg user-select-none py-2 px-3 font-inherit text-inherit  dark:hover:text-black mr-4"
         >
           <ChevronLeft />
         </button>
-        <div className="slider relative h-[500px] w-[350px] overflow-hidden md:h-[500px] md:w-[700px]">
+        <div className="slider relative h-[300px] w-[400px] overflow-hidden md:h-[500px] md:w-[700px] ">
           <AnimatePresence initial={false} custom={direction}>
             <motion.div
               key={imageCount}
@@ -83,7 +83,7 @@ const Certifications: React.FC = () => {
               dragConstraints={{ left: 0, right: 0 }}
               dragElastic={1}
               onDragEnd={(_, dragInfo) => dragEndHandler(dragInfo)}
-              className="image absolute h-full w-full bg-cover bg-center will-change-transform opacity-0"
+              className="image absolute h-full w-full bg-cover bg-center will-change-transform opacity-0 "
             >
               <Image
                 src={IMAGES[activeImageIndex].src}
@@ -97,10 +97,13 @@ const Certifications: React.FC = () => {
 
         <button
           onClick={() => swipeToImage(1)}
-          className="h-[200px] hover:bg-gray-200 rounded-lg user-select-none py-2 px-3 font-inherit text-inherit text-black ml-4"
+          className="md:h-[200px] hidden md:block hover:bg-gray-200 rounded-lg user-select-none py-2 px-3 font-inherit text-inherit dark:hover:text-black ml-4"
         >
           <ChevronRight />
         </button>
+        <span className="md:hidden block mt-2">
+          {"<-"} Swipe {"->"}
+        </span>
       </div>
 
       <div className="thumbnails flex justify-center">
@@ -108,7 +111,7 @@ const Certifications: React.FC = () => {
           <div
             key={image.id}
             onClick={() => skipToImage(image.id)}
-            className="thumbnail-container relative h-[120px] w-[90px] md:h-[70px] md:w-[100px] hover:cursor-pointer not:last-of-type:mr-1"
+            className="thumbnail-container relative h-[60px] w-[90px] md:h-[70px] md:w-[100px] hover:cursor-pointer not:last-of-type:mr-1"
           >
             <Image
               src={image.src}
