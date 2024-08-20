@@ -59,7 +59,7 @@ const Certifications: React.FC = () => {
     <main className="pt-20" id="certificates">
       <div className="items-center relative justify-center flex">
         <div className="text-4xl lg:text-4xl md:text-4xl  text-black-100 dark:text-white">
-          Some <span className="text-orange-400">Certificates</span>
+          <span className="text-orange-400">Certifications</span>
         </div>
       </div>
       <div className="slider-container flex md:flex-row flex-col items-center mt-6 mb-4 justify-center">
