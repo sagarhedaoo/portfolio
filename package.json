@@ -1,6 +1,6 @@
 {
   "name": "portfolio-next",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,7 +11,6 @@
   "dependencies": {
     "@gsap/react": "2.1.1",
     "@headlessui/react": "2.1.2",
-    "@next/third-parties": "14.2.3",
     "@nextui-org/react": "2.4.2",
     "@popmotion/popcorn": "0.4.4",
     "@radix-ui/react-dropdown-menu": "2.0.6",
@@ -23,6 +22,7 @@
     "@react-three/fiber": "8.16.6",
     "@tabler/icons-react": "3.5.0",
     "@types/react-transition-group": "4.4.10",
+    "@vercel/analytics": "^2.0.1",
     "class-variance-authority": "0.7.0",
     "clsx": "2.1.1",
     "cobe": "0.6.3",
