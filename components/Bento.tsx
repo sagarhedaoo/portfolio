@@ -27,7 +27,9 @@ const features = [
     description: "Stevens Institute of Technology",
     href: "/",
     cta: "Learn more",
-    background: <Image src={stevens} fill={true} alt="stevens" />,
+    background: (
+      <Image src={stevens} fill alt="stevens" sizes="(max-width: 768px) 100vw, 33vw" />
+    ),
     className:
       "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3 h-[350px] md:h-full lg:h-full",
   },
@@ -74,7 +76,7 @@ export function BentoDemo() {
   return (
     <BentoGrid className="lg:grid-rows-3 ">
       {features.map((feature) => (
-        <BentoCard key={feature.name} {...feature} />
+        <BentoCard key={feature.id} {...feature} />
       ))}
     </BentoGrid>
   );

@@ -111,31 +111,20 @@ function Navbar({ className }: { className?: string }) {
                 </LinkPreview>
               </div>
               <div className="flex gap-3 items-center">
-                <Link href="https://github.com/sagarhedaoo" target="_blank">
-                  <div>
-                    <LinkPreview
-                      url="https://github.com/sagarhedaoo"
-                      className="flex justify-center items-center gap-2 hover:bg-black hover:text-white rounded-lg dark:hover:bg-white dark:hover:text-black h-9"
-                    >
-                      <GitHubLogoIcon className="ml-2 h-5 w-5" />
-                      <span className="mr-2 text-md">Github</span>
-                    </LinkPreview>
-                  </div>
-                </Link>
-                <Link
-                  href="https://www.linkedin.com/in/sagarhedaoo/"
-                  target="_blank"
+                <LinkPreview
+                  url="https://github.com/sagarhedaoo"
+                  className="flex justify-center items-center gap-2 hover:bg-black hover:text-white rounded-lg dark:hover:bg-white dark:hover:text-black h-9"
                 >
-                  <div>
-                    <LinkPreview
-                      url="https://www.linkedin.com/in/sagarhedaoo/"
-                      className="flex justify-center items-center gap-2 hover:bg-black hover:text-white rounded-lg dark:hover:bg-white dark:hover:text-black h-9"
-                    >
-                      <FaLinkedin className="ml-2 h-5 w-5" />
-                      <span className="mr-2 text-md">LinkedIn</span>
-                    </LinkPreview>
-                  </div>
-                </Link>
+                  <GitHubLogoIcon className="ml-2 h-5 w-5" />
+                  <span className="mr-2 text-md">Github</span>
+                </LinkPreview>
+                <LinkPreview
+                  url="https://www.linkedin.com/in/sagarhedaoo/"
+                  className="flex justify-center items-center gap-2 hover:bg-black hover:text-white rounded-lg dark:hover:bg-white dark:hover:text-black h-9"
+                >
+                  <FaLinkedin className="ml-2 h-5 w-5" />
+                  <span className="mr-2 text-md">LinkedIn</span>
+                </LinkPreview>
                 <ModeToggle />
               </div>
             </div>
