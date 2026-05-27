@@ -7,7 +7,7 @@ import MagicButton from "../ui/MagicButton";
 import animationData from "@/data/confetti.json";
 import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "react-lottie";
-import { motion, useScroll, useMotionValueEvent } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 
 const BentoGrid = ({
   children,
@@ -45,12 +45,8 @@ const BentoCard = ({
   const { scrollY } = useScroll();
   const [isActive, setIsActive] = useState(false);
 
-  useMotionValueEvent(scrollY, "change", (latest) => {
-    console.log(latest);
-  });
-
   useEffect(() => {
-    return scrollY.onChange((latest) => {
+    return scrollY.on("change", (latest) => {
       if (latest >= 400 && !isActive) {
         setIsActive(true);
       }
@@ -74,7 +70,7 @@ const BentoCard = ({
         className
       )}
     >
-      <div>{background}</div>
+      <div className="absolute inset-0">{background}</div>
 
       <div className="pointer-events-none z-10 flex transform-gpu flex-col gap-1 p-6 transition-all duration-300 group-hover:-translate-y-10 ">
         {id !== 5 && (

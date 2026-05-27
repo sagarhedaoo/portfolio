@@ -21,7 +21,7 @@ const sliderVariants = {
 
 const sliderTransition = {
   duration: 1,
-  ease: [0.56, 0.03, 0.12, 1.04],
+  ease: [0.56, 0.03, 0.12, 1.04] as [number, number, number, number],
 };
 
 const Certifications: React.FC = () => {
@@ -88,8 +88,9 @@ const Certifications: React.FC = () => {
               <Image
                 src={IMAGES[activeImageIndex].src}
                 alt="Certificate"
-                layout="fill"
-                objectFit="fill"
+                fill
+                sizes="(max-width: 768px) 100vw, 80vw"
+                style={{ objectFit: "fill" }}
               />
             </motion.div>
           </AnimatePresence>

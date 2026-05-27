@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef } from "react";
 import createGlobe, { COBEOptions } from "cobe";
-import { useSpring } from "react-spring";
+import { useSpring } from "framer-motion";
 
 import { cn } from "@/utils/cn";
 
@@ -46,15 +46,12 @@ export default function Globe({
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const pointerInteracting = useRef(null);
   const pointerInteractionMovement = useRef(0);
-  const [{ r }, api] = useSpring(() => ({
-    r: 0,
-    config: {
-      mass: 1,
-      tension: 280,
-      friction: 40,
-      precision: 0.001,
-    },
-  }));
+  const r = useSpring(0, {
+    mass: 1,
+    stiffness: 280,
+    damping: 40,
+    restDelta: 0.001,
+  });
 
   const updatePointerInteraction = (value: any) => {
     pointerInteracting.current = value;
@@ -65,7 +62,7 @@ export default function Globe({
     if (pointerInteracting.current !== null) {
       const delta = clientX - pointerInteracting.current;
       pointerInteractionMovement.current = delta;
-      api.start({ r: delta / 200 });
+      r.set(delta / 200);
     }
   };
 
