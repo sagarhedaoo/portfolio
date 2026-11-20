@@ -1,36 +1,33 @@
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
-import { ThemeProvider } from "./provider";
+import type { Metadata, Viewport } from "next";
+import { Schibsted_Grotesk } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const sans = Schibsted_Grotesk({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Sagar's Portfolio",
-  description: "Portfolio",
+  metadataBase: new URL("https://sagarhedaoo.com"),
+  title: "Sagar Hedaoo, AI and data engineer",
+  description:
+    "Senior full-stack and Databricks engineer building knowledge graphs, RAG systems, AI agents, lakehouse pipelines and React front ends.",
   openGraph: {
-    title: "Sagar's Portfolio",
-    description: "Portfolio",
+    title: "Sagar Hedaoo",
+    description: "AI, data and full-stack engineering.",
+    url: "https://sagarhedaoo.com",
+    type: "website",
   },
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export const viewport: Viewport = {
+  themeColor: "#1b1222",
+  colorScheme: "dark",
+};
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
+    <html lang="en" className={sans.variable}>
+      <body>
+        {children}
         <Analytics />
       </body>
     </html>
