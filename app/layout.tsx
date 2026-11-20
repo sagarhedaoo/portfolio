@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://sagarhedaoo.com"),
   title: "Sagar Hedaoo, AI and data engineer",
   description:
-    "Senior full-stack and Databricks engineer building knowledge graphs, RAG systems, lakehouse pipelines and React front ends for finance.",
+    "Senior full-stack and Databricks engineer building knowledge graphs, RAG systems, AI agents, lakehouse pipelines and React front ends.",
   openGraph: {
     title: "Sagar Hedaoo",
-    description: "AI, data and full-stack engineering for finance.",
+    description: "AI, data and full-stack engineering.",
     url: "https://sagarhedaoo.com",
     type: "website",
   },

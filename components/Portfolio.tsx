@@ -8,6 +8,8 @@ import { SplitText } from "gsap/SplitText";
 import { useGSAP } from "@gsap/react";
 import GraphStage from "./GraphStage";
 import NodePanel from "./NodePanel";
+import AiUsage from "./AiUsage";
+import type { AiUsage as Usage } from "@/lib/ai-usage";
 import { certificates, contact, education, projects, roles, skills, type SkillGroup } from "@/lib/content";
 import { counts, kindColor, type NodeKind } from "@/lib/graph";
 import { setState, useStore } from "@/lib/store";
@@ -50,11 +52,11 @@ function Hero() {
     <section className="hero" id="top" aria-labelledby="hero-title">
       <div className="hero-copy">
         <h1 id="hero-title" className="hero-title">
-          I build AI and data systems for finance, and the interfaces people use to trust them.
+          I build AI and data systems, and the interfaces people use to trust them.
         </h1>
         <p className="hero-sub" data-intro>
-          Senior full-stack and Databricks engineer at Scalata AI. Knowledge graphs, RAG, lakehouse
-          pipelines and the React front ends on top.
+          Senior full-stack and Databricks engineer at Scalata AI. Knowledge graphs, RAG, agents,
+          lakehouse pipelines and the React front ends on top.
         </p>
         <div className="legend" role="group" aria-label="Highlight on the map" data-intro>
           {legend.map((l) => (
@@ -297,7 +299,7 @@ function ExploreBar() {
   );
 }
 
-export default function Portfolio() {
+export default function Portfolio({ usage }: { usage: Usage | null }) {
   const root = useRef<HTMLDivElement>(null);
 
   useGSAP(
@@ -347,7 +349,7 @@ export default function Portfolio() {
           });
         });
         ScrollTrigger.create({
-          trigger: "#certificates",
+          trigger: "#ai, #certificates",
           start: "top 55%",
           onEnter: () => setState({ spotlight: null }),
         });
@@ -379,6 +381,7 @@ export default function Portfolio() {
           <Work />
           <Experience />
           <Skills />
+          {usage && <AiUsage usage={usage} />}
           <Certificates />
           <Contact />
         </div>

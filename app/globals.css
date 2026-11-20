@@ -683,6 +683,85 @@ main {
   color: var(--skill);
 }
 
+/* ---------- AI usage ---------- */
+
+.usage {
+  display: grid;
+  gap: 48px;
+}
+
+.usage-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 14px;
+}
+
+.usage-head h3 {
+  font-size: var(--step-1);
+  font-weight: 600;
+}
+
+.usage-head p {
+  color: var(--muted);
+}
+
+.usage-total {
+  font-size: var(--step-3);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+
+.usage-bar {
+  display: flex;
+  gap: 2px;
+  height: 14px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.usage-bar span {
+  min-width: 3px;
+  transition: opacity 0.2s ease;
+}
+
+.usage-models {
+  margin-top: 16px;
+}
+
+.usage-models li {
+  display: grid;
+  grid-template-columns: 9px 1fr auto 4.5rem;
+  align-items: center;
+  gap: 12px;
+  padding: 9px 0;
+  border-top: 1px solid var(--line);
+  font-size: 0.9375rem;
+  transition: opacity 0.2s ease;
+}
+
+.usage-bar span[data-dim],
+.usage-models li[data-dim] {
+  opacity: 0.3;
+}
+
+.usage-num {
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+
+.usage-share {
+  color: var(--muted);
+}
+
+.usage-updated {
+  margin-top: 24px;
+  font-size: 0.875rem;
+  color: var(--muted);
+}
+
 /* ---------- Certificates ---------- */
 
 .cert-list button {

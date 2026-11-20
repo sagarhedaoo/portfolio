@@ -25,7 +25,7 @@ export const skills: Skill[] = [
   { id: "nextjs", label: "Next.js", group: "Frontend", note: "App Router, server components and server actions for full-stack apps that deploy straight to Vercel." },
   { id: "tailwind", label: "Tailwind CSS", group: "Frontend", note: "Fast, consistent styling with design tokens, so a UI stays coherent as it grows." },
   { id: "radix", label: "Radix UI and shadcn", group: "Frontend", note: "Accessible primitives for menus, dialogs and forms. I contributed a radio group update upstream." },
-  { id: "dataviz", label: "Data visualisation", group: "Frontend", note: "Charts and graph views that make complex data readable, from portfolio dashboards to ontology maps like this one." },
+  { id: "dataviz", label: "Data visualisation", group: "Frontend", note: "Charts and graph views that make complex data readable, from operational dashboards to ontology maps like this one." },
 
   { id: "node", label: "Node.js", group: "Backend and APIs", note: "APIs and background workers in JavaScript land, mostly with Express." },
   { id: "express", label: "Express", group: "Backend and APIs", note: "Lightweight REST APIs for MERN apps, with auth, validation and tests." },
@@ -41,7 +41,7 @@ export const skills: Skill[] = [
   { id: "langchain", label: "LangChain", group: "AI and knowledge", note: "Orchestration for chains, tools and agents, with model routing so each step uses the right model." },
   { id: "langsmith", label: "LangSmith", group: "AI and knowledge", note: "Tracing and evaluation for LLM apps, so a bad answer can be replayed, inspected and fixed." },
   { id: "vectors", label: "Vector search", group: "AI and knowledge", note: "Vector stores and similarity search tuned for recall and latency, the retrieval half of every RAG system I build." },
-  { id: "kg", label: "Knowledge graphs", group: "AI and knowledge", note: "Graphs of entities and relationships that give LLMs structured context and let analysts ask connected questions." },
+  { id: "kg", label: "Knowledge graphs", group: "AI and knowledge", note: "Graphs of entities and relationships that give LLMs structured context and let people ask connected questions." },
   { id: "ontology", label: "Ontology management", group: "AI and knowledge", note: "Designing and versioning the classes, properties and relations a knowledge graph is built on, and keeping them in sync with the data." },
   { id: "training", label: "Model training", group: "AI and knowledge", note: "Fine-tuning and evaluating models for classification and extraction, tracked end to end in MLflow." },
   { id: "mlflow", label: "MLflow", group: "AI and knowledge", note: "Experiment tracking, model registry and tracing for both classic ML and LLM workflows." },
@@ -50,7 +50,7 @@ export const skills: Skill[] = [
   { id: "databricks", label: "Databricks", group: "Data and lakehouse", note: "Where most of my data and AI work runs: notebooks, jobs, SQL warehouses and model serving." },
   { id: "lakehouse", label: "Lakehouse", group: "Data and lakehouse", note: "Designing medallion-style lakehouse layers so raw, cleaned and reporting data each have a clear home." },
   { id: "delta", label: "Delta Lake", group: "Data and lakehouse", note: "Delta tables with schema evolution, time travel and merge-based upserts for reliable pipelines." },
-  { id: "pyspark", label: "PySpark", group: "Data and lakehouse", note: "Large-scale transformations over credit portfolio data, written to handle changing schemas." },
+  { id: "pyspark", label: "PySpark", group: "Data and lakehouse", note: "Large-scale transformations written to handle changing schemas and messy, real-world source data." },
   { id: "unity", label: "Unity Catalog", group: "Data and lakehouse", note: "Governance for tables, models and access across Databricks workspaces." },
   { id: "postgres", label: "PostgreSQL", group: "Data and lakehouse", note: "Relational backbone for apps that need strong consistency, from form builders to REST APIs." },
   { id: "mongodb", label: "MongoDB", group: "Data and lakehouse", note: "Document storage for app data and sessions where the shape changes often." },
@@ -63,8 +63,8 @@ export const skills: Skill[] = [
   { id: "cicd", label: "CI/CD", group: "Cloud and delivery", note: "Automated tests and deploys on every push, so shipping is routine rather than an event." },
   { id: "cloudinary", label: "Cloudinary", group: "Cloud and delivery", note: "Image hosting and on-the-fly transforms for listing photos." },
 
-  { id: "finance", label: "Credit and finance data", group: "Domain", note: "Credit portfolios, facilities and covenants: the domain my current AI and data pipelines are built for." },
-  { id: "sap", label: "SAP ERP", group: "Domain", note: "Requirements, testing and data migration for SAP finance, HR and materials modules across 500+ sites." },
+  { id: "finance", label: "Financial data", group: "Domain", note: "Credit portfolios and reporting data at Scalata AI: one of the domains I have built AI and data pipelines for." },
+  { id: "sap", label: "Enterprise ERP", group: "Domain", note: "Requirements, testing and data migration for SAP finance, HR and materials modules across 500+ sites." },
 ];
 
 export type Role = {
@@ -135,16 +135,16 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "credit-kg",
-    title: "Credit portfolio knowledge graph",
+    id: "enterprise-kg",
+    title: "Enterprise knowledge graph",
     kind: "project",
     summary:
-      "An ontology-backed graph of borrowers, facilities and covenants that analysts can question in plain English.",
+      "An ontology-backed graph of an organisation's documents, systems and people that anyone can question in plain English.",
     points: [
       "Ontology versioned alongside code, with migrations when a concept changes.",
-      "Graph RAG answers cite the exact facility and clause they came from.",
+      "Graph RAG answers cite the exact document and passage they came from.",
     ],
-    stack: ["kg", "ontology", "rag", "langchain", "python", "finance", "databricks", "vectors"],
+    stack: ["kg", "ontology", "rag", "langchain", "python", "databricks", "vectors"],
     links: [],
   },
   {
@@ -161,12 +161,12 @@ export const projects: Project[] = [
     links: [],
   },
   {
-    id: "risk-model",
-    title: "Covenant breach classifier",
+    id: "doc-classifier",
+    title: "Document triage model",
     kind: "project",
     summary:
-      "A fine-tuned text classifier that flags likely covenant breaches in quarterly filings before an analyst reads them.",
-    stack: ["training", "python", "mlflow", "databricks", "finance"],
+      "A fine-tuned classifier that sorts incoming contracts, tickets and reports by type and urgency before a person reads them.",
+    stack: ["training", "python", "mlflow", "databricks", "langsmith"],
     links: [],
   },
   {
